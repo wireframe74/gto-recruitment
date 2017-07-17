@@ -1,0 +1,248 @@
+#newscolumn {
+
+
+	a {
+		@extend .heading-font;
+		color: $primary-color;
+		font-weight: bold;
+		font-size: 13px;
+	}
+
+
+} 
+
+.aig-jobs-template-default .postCollapse.apprentices   h2 {
+font-size:2.8rem;
+line-height:3.5rem;
+@extend .heading-font;
+text-transform:none;
+font-weight:normal
+}
+
+
+.postCollapse.apprentices {
+
+	.scroll + h2 {
+		margin-top: 0;
+	}
+
+
+}
+
+
+#rightcolumn {
+
+	strong {
+		text-transform: uppercase;
+		font-weight:bold;	 
+	}
+
+	p {
+		    margin: 13px 0;
+		    color:#444444;
+	}
+
+	.applybutton a {
+		@extend .aig-btn;
+		@extend .heading-font;
+		margin-bottom: 30px;
+	}
+
+
+
+
+}
+
+
+.icon-widget {
+		#findaspecialist 	h2 {
+			display:none
+			}
+		}
+
+
+	#findaspecialist {
+
+
+		
+
+h2 {
+	text-transform:uppercase;
+	@extend .body-copy;
+	@extend .sm-font;
+	font-weight:bold;
+	margin-bottom: 11px;
+
+
+}
+
+.form-control {
+	border: none;
+	background: #fbfbfb;
+	box-shadow:none;
+	    border: none;
+    background: #ffffff;
+    box-shadow: none;
+      padding: 0 10px;
+    border: 1px solid #e6e6e6;
+    line-height: 1.5rem;
+    height: 35px; 
+    border-radius:50px;
+}
+  
+} 
+
+.selectbox {
+	margin-top: 10px;
+}
+
+
+
+.postCollapse.apprentices table tr th, 
+.postCollapse.alljobs table tr th, 
+.postCollapse.employers table tr th {
+    background: $dark-grey;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-margin-after-collapse: 20px;
+     padding: 16px 30px;
+    font-size: 14px;
+
+    strong {
+    	    color: #fff;
+    }
+}
+
+
+#jobs-listing {
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	
+	th {
+	display:none;
+	}
+
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: none; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-right: 10px;
+    white-space: nowrap;
+    padding: 20px 30px 0 30px;
+    background: transparent;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+	}
+
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Details"; }
+	td:nth-of-type(2):before { content: "JOB ID"; }
+	td:nth-of-type(3):before { content: "Date Listed"; }
+	td:nth-of-type(4):before { content: "Location"; }
+	td:nth-of-type(5):before { content: "Wars of Trek?"; }
+	td:nth-of-type(6):before { content: "Porn Name"; }
+	td:nth-of-type(7):before { content: "Date of Birth"; }
+	td:nth-of-type(8):before { content: "Dream Vacation City"; }
+	td:nth-of-type(9):before { content: "GPA"; }
+	td:nth-of-type(10):before { content: "Arbitrary Data"; }
+}
+
+
+
+
+
+	h2 {
+		@extend .body-copy;
+		@extend .sm-font;
+		font-weight: bold;
+		color: $dark-grey;
+		 margin-bottom: 10px!important;
+		 margin-top: 0;
+		 padding-top: 0;
+		
+
+
+
+
+	}
+
+		
+	.applybutton a {
+	@extend .aig-btn__small;
+	@extend .aig-btn;
+	@extend .body-copy;
+    padding: 4px 6px;
+    max-width:165px;
+
+    @media (max-width:550px) {
+    	max-width:none;
+    	width:100%;
+    }
+	}
+	
+	td {
+
+		@extend .body-copy;
+		vertical-align: top;
+		@extend .sm-font;
+		    padding: 30px;
+
+		    &:first-child {
+		    	width:55%;
+
+		    	  @media (max-width:760px) { 
+					width:100%;
+		    	  }
+		    }
+
+		    @media (max-width:760px) {
+		    	padding-bottom:20px;
+		    	    padding-top: 48px;
+		    }
+	}
+
+	tr {
+
+		border-bottom:2px solid $dark-grey;
+
+		&:nth-child(even) {
+			background-color: #fbfbfb;
+		}
+	}
+
+
+}

@@ -1,0 +1,49 @@
+.get-in-touch {
+
+	background-image: url(../images/footer-img-right.jpg);
+//     background-size: auto 100%;
+    background-position: right;
+    background-color: #1c2227;
+        background-repeat: no-repeat;
+
+  background-size: cover;
+  background-attachment:fixed;
+
+
+}
+ 
+.section-bg {
+
+
+	&--title {
+		@extend .heading-font;
+		@extend .md-font;
+		text-transform:none;
+		font-weight:normal;
+		color:#fff;
+	}
+
+	&--text {
+		font-size: 1.2rem;
+		margin: 30px 0;
+		color:#fff;
+		line-height:1.5rem;
+
+	}
+
+	&--btn {
+@extend .heading-font;
+		
+	}
+}
+
+.dark-grey-bg {
+
+	background-color: $dark-grey;
+}
+
+
+.section-orange-bg {
+
+	background-color: $primary-color;
+}

@@ -1,0 +1,163 @@
+/*******************************
+* ACCORDION WITH TOGGLE ICONS
+* Does not work properly if "in" is added after "collapse".
+* Get free snippets on bootpen.com
+*******************************/
+
+  .panel-group {
+    margin: 40px 0
+  }
+
+
+  .panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #EEEEEE;
+  }
+
+  .panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #212121;
+    background-color: #FAFAFA;
+    border-color: #EEEEEE;
+  }
+
+  .panel-title {
+    font-size: 14px;
+  }
+
+  .panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+  }
+
+  .more-less {
+    float: right;
+    color: #212121;
+  }
+
+  .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
+  }
+
+
+.panel-title > a:after {
+  content: "\f078"; /* fa-chevron-down */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 30px;
+}
+.panel-title > a[aria-expanded="true"]:after {
+  content: "\f077"; /* fa-chevron-up */
+}
+
+
+
+.st-accordion{
+    width:100%;
+    min-width:270px;
+    margin: 0 auto;
+}
+.st-accordion >  ul > li{
+    height: 50px;
+    border-bottom: 1px solid #999;
+    border-top:1px solid #fff;
+    overflow: hidden;
+
+            padding-left:0!important;
+            background-image:none!important;
+            margin:0!important;
+}
+.st-accordion > ul > li:first-child{
+    border-top:none;
+}
+ 
+
+
+.st-accordion > ul > li > a{
+    @extend .heading-font;
+
+    font-size: 1.1rem;
+    display: block;
+  position: relative;
+    line-height: 50px;
+  outline:none;
+    -webkit-transition:  color 0.2s ease-in-out;
+  -moz-transition:  color 0.2s ease-in-out;
+  -o-transition:  color 0.2s ease-in-out;
+  -ms-transition:  color 0.2s ease-in-out;
+  transition:  color 0.2s ease-in-out;
+  padding-left:10px;
+  color:#111;
+
+    &:after {
+      content: "";
+      background:url(../images/icons/cross.svg) center center no-repeat;
+      width:23px;
+      height:23px;
+      font-size: 1.7em;
+      line-height: 0.5em;
+      float: left;
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+      transition: -webkit-transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+      position:absolute;
+      right: 10px;
+    top: 11px;
+  }
+
+
+}
+.st-accordion > ul > li > a span{
+ text-indent:-9000px;
+  width: 26px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  right: -26px;
+  margin-top: -7px;
+  opacity:0;
+  -webkit-transition:  all 0.2s ease-in-out;
+  -moz-transition:  all 0.2s ease-in-out;
+  -o-transition:  all 0.2s ease-in-out;
+  -ms-transition:  all 0.2s ease-in-out;
+  transition:  all 0.2s ease-in-out;
+}
+
+.st-accordion > ul > li > a:hover span{
+  opacity:1;
+  right: 10px;
+}
+.st-accordion > ul > li.st-open > a{
+    color:#111;
+    &:after {
+      -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+    }
+}
+.st-accordion > ul > li.st-open > a span{
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+    transform:rotate(180deg);
+  right:10px;
+  opacity:1;
+}
+.st-content{
+    padding: 5px 0px 30px 20px;
+}
+.st-content p{
+ 
+}
+.st-content img{
+    width:125px;
+    border-right:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+@media screen and (max-width: 320px){
+  .st-accordion > ul > li > a{
+    font-size:36px;
+  }
+}

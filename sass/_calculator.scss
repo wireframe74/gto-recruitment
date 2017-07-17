@@ -1,0 +1,37 @@
+.calculator-itm {
+
+
+	color: #fff;
+	    text-align: center;
+    padding: 80px 30px;
+    
+
+    .num {
+    	font-size:6rem;
+    }
+     
+
+    p {
+    	color:#fff;
+    }
+
+
+		&__orange {
+		background-color: $primary-color;
+
+		}
+
+
+		&__grey {
+		background-color: $dark-grey;
+		}
+
+
+		&__light-grey {
+		background-color: lighten($dark-grey,10%);
+		}
+
+
+
+
+}

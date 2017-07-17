@@ -1,0 +1,64 @@
+.stats {
+
+    text-align: center;
+
+    &--title {
+        font-size: 8rem;
+        color: $primary-color;
+        @extend .heading-font;
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        @media (min-width:768px) and (max-width:991px) {
+              font-size: 6rem;
+        }
+    }
+}
+
+
+
+.testimonials {
+        
+        text-align: center;
+
+        &--avatar {
+              width: 100%;
+    max-width: 80px;
+    margin: 20px auto;
+        }
+
+
+        &--text {
+        @extend .heading-font;
+            font-size: 1rem;
+    color: #696f77;
+        line-height:1.6rem;
+        }
+
+
+        &--name {
+        
+
+        }
+
+
+
+}
+
+
+
+.jobs-scroller {
+
+    h4 {
+        padding-top: 5px;
+        @media (max-width:500px) {
+        width:100%;
+        margin-bottom:10px;
+         }
+    }
+
+    .item h4 {
+        padding-top: 0;
+        margin-bottom:4px;
+    }
+}
