@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Social Rail - Demo Twitter</title>
+    <link rel="stylesheet" href="include/main.css">
+    <link rel="stylesheet" href="include/flexslider/flexslider.css">
+    <script src="include/jquery.min.js"></script>
+    <script src="include/main.js"></script>
+    <script src="include/flexslider/flexslider.js"></script>
+    <script src="include/slimscroll.js"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #e5e5e5;
+        }
+
+        .content {
+            text-align: left;
+            margin: auto auto;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h4>Twitter stream not work for local file system file urls like file:///, use a live website or a localhost server.</h4>
+        <br />
+        <br />
+        <h3 class="text-m">TWITTER BASE</h3>
+        <div class="social-feed-tw no-comments" data-social-id="TwitterLive" data-options="limit:3"></div>
+        <br /><br />
+        <h3 class="text-m">TWITTER SLIDER</h3>
+        <div class="social-feed-tw flexslider" data-social-id="TwitterLive" data-options="comments:false"></div>
+        <br /><br />
+        <h3 class="text-m">TWITTER CAROUSEL</h3>
+        <div class="social-feed-tw flexslider carousel" data-social-id="TwitterLive" data-options="comments:false"></div>
+        <br /><br />
+        <h3 class="text-m">TWITTER SCROLL BOX</h3>
+        <div class="social-feed-tw scroll-content" data-height="400" data-social-id="TwitterLive" data-options="limit:8,mobileDisabled:true"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.yui-skin-sam .yui-panel-container.shadow .underlay {
+    position: absolute;
+    top: 2px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    _top: 0;
+    _left: 0;
+    _right: 0;
+    _bottom: 0;
+    _margin-top: 3px;
+    _margin-left: -1px;
+    background-color: #000;
+    opacity: .12;
+    filter: alpha(opacity=12);
+    display: none;
+}

@@ -1,0 +1,22 @@
+.parallax--bg {
+
+    &__city {
+ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(//graduate.aigroup.com.au/city.jpg) center center no-repeat;
+
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+
+
+     .parallax--right-img, 
+    .parallax--left-img { 
+        opacity: .7
+    }
+ 
+
+
+    }
+
+
+
+}

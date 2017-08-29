@@ -8,6 +8,10 @@ z-index:20000000000000;
 
  
 
+.nav-up {
+    top: -75px;
+}
+
 
 .header-buttons {
   
@@ -58,10 +62,10 @@ position:relative;
     overflow: hidden;
     text-indent: -9999em; 
     margin-top:0;
-    background: transparent url(../images/logo.svg) center center no-repeat;
+    background: transparent url(css/images/logo.svg) center center no-repeat;
  
     &--white {
-    background: transparent url(../images/logo.svg) center center no-repeat;
+    background: transparent url(css/images/logo.svg) center center no-repeat;
     vertical-align: middle;
     position: absolute;
     top: 2px;
@@ -119,11 +123,11 @@ position:relative;
        
 
         &__search a{
-        background: url(../images/icons/search.svg) top left no-repeat;
+        background: url(css/images/icons/search.svg) top left no-repeat;
         }
 
         &__facebook a{
-        background: url(../images/icons/facebook-app-logo.svg) top left no-repeat;
+        background: url(css/images/icons/facebook-app-logo.svg) top left no-repeat;
         margin-left:10px;
         }
 
@@ -141,13 +145,24 @@ position:relative;
 .aig-header.reversed {
     background-color: $dark-grey;
 
+       -webkit-transition: top 0.2s ease-in-out;
+    transition: top 0.2s ease-in-out;
+
     &:before {
         background:none;
     }
 
+// li.menu-item-has-children > a:after {
+//     border-color:$primary-color;
+//     border-top: 1px solid transparent;
+//     border-left: 1px solid transparent; 
+// }
+   
+
+
 
 /*     .aig-logo {
-         background: transparent url(../images/logo.svg) center center no-repeat;
+         background: transparent url(css/images/logo.svg) center center no-repeat;
     }
  */
         .li.menu-item-has-children > a {
@@ -173,10 +188,16 @@ overflow:hidden;
          
             width: 100%;
             position: absolute;
-            bottom:-300px;
+            bottom:-400px;
             right:30px;
             z-index:3;
             fill: currentColor;
+
+                @media (max-width:767px) {
+                bottom: 293px!important;
+                right: -188px;  
+                }
+
          }
 
            &--man {
@@ -184,12 +205,23 @@ overflow:hidden;
             display: block;
             position: absolute;
             right: -200px;
-            width: 78%;
+            width: 74%;
+
+            @media (max-width:767px) {
+                width: 800px;
+                right:-200px;
+            }
 
          }
 
 
 
 
+
+}
+
+.aig-header {
+    -webkit-transition: top 0.2s ease-in-out;
+    transition: top 0.2s ease-in-out;
 
 }

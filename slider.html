@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+	<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Vimeo Gallery - Slider Revolution</title>
+		<meta name="description" content="Slider Revolution Example" />
+		<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+		<meta name="author" content="ThemePunch" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- LOAD JQUERY LIBRARY -->
+
+		
+		<!-- LOADING FONTS AND ICONS -->
+		
+		
+<link rel="stylesheet" type="text/css" href="http://graduate.aigroup.com.au/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+<link rel="stylesheet" type="text/css" href="http://graduate.aigroup.com.au/fonts/font-awesome/css/font-awesome.css">
+
+<!-- REVOLUTION STYLE SHEETS -->
+<link rel="stylesheet" type="text/css" href="http://graduate.aigroup.com.au/css/graduate/settings.css">
+<!-- REVOLUTION LAYERS STYLES -->
+
+<style type="text/css">	#rev_slider_9_1_wrapper .tp-loader.spinner2{ background-color: #333333 !important; } </style>
+				<style type="text/css">#rev_slider_9_1 .uranus.tparrows{width:50px; height:50px; background:rgba(255,255,255,0)}#rev_slider_9_1 .uranus.tparrows:before{width:50px; height:50px; line-height:50px; font-size:40px; transition:all 0.3s;-webkit-transition:all 0.3s}#rev_slider_9_1 .uranus.tparrows:hover:before{opacity:0.75}.erinyen .tp-thumb{opacity:1}.erinyen .tp-thumb-over{background:rgba(0,0,0,0.25); width:100%; height:100%; position:absolute; top:0px; left:0px; z-index:1; -webkit-transition:all 0.3s; transition:all 0.3s}.erinyen .tp-thumb-more:before{font-family:"revicons"; font-size:12px; color:rgb(170,170,170); display:block; line-height:15px; text-align:left;   z-index:2; position:absolute; top:20px; right:20px; z-index:2}.erinyen .tp-thumb-more:before{content:"\e825"}.erinyen .tp-thumb-title{font-family:"Raleway"; letter-spacing:1px; font-size:12px; color:rgb(255,255,255); display:block; line-height:15px; text-align:left;   z-index:2; position:absolute; top:0px; left:0px; z-index:2; padding:20px 35px 20px 20px; width:100%; height:100%; box-sizing:border-box; transition:all 0.3s; -webkit-transition:all 0.3s; font-weight:500}.erinyen .tp-thumb.selected .tp-thumb-more:before,.erinyen .tp-thumb:hover .tp-thumb-more:before{color:rgb(170,170,170)}.erinyen .tp-thumb.selected .tp-thumb-over,.erinyen .tp-thumb:hover .tp-thumb-over{background:rgb(255,255,255)}.erinyen .tp-thumb.selected .tp-thumb-title,.erinyen .tp-thumb:hover .tp-thumb-title{color:rgb(0,0,0)}</style>
+				
+<style type="text/css">.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.largeredbtn{font-family:"Raleway",sans-serif;font-weight:900;font-size:16px;line-height:60px;color:#fff !important;text-decoration:none;padding-left:40px;padding-right:80px;padding-top:22px;padding-bottom:22px;background:rgb(234,91,31); background:-moz-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(234,91,31,1)),color-stop(100%,rgba(227,58,12,1))); background:-webkit-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-o-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:-ms-linear-gradient(top,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); background:linear-gradient(to bottom,rgba(234,91,31,1) 0%,rgba(227,58,12,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea5b1f',endColorstr='#e33a0c',GradientType=0 )}.largeredbtn:hover{background:rgb(227,58,12); background:-moz-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(227,58,12,1)),color-stop(100%,rgba(234,91,31,1))); background:-webkit-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-o-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:-ms-linear-gradient(top,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); background:linear-gradient(to bottom,rgba(227,58,12,1) 0%,rgba(234,91,31,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e33a0c',endColorstr='#ea5b1f',GradientType=0 )}.fullrounded img{-webkit-border-radius:400px;-moz-border-radius:400px;border-radius:400px}</style>
+		<!-- REVOLUTION JS FILES -->
+		<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
+		<script type="text/javascript" src="js/extensions/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.carousel.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.migration.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.parallax.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="js/extensions/revolution.extension.video.min.js"></script>
+		<script type="text/javascript">function setREVStartSize(e){
+				try{ var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;					
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};</script>
+	</head>
+	
+	<body>
+			
+
+<div id="rev_slider_9_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="vimeo-gallery" data-source="vimeo" style="margin:0px auto;background:#000000;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- START REVOLUTION SLIDER 5.4.5.1 auto mode -->
+	<div id="rev_slider_9_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.5.1">
+<ul>	<!-- SLIDE  -->
+	<li data-index="rs-211615865" data-transition="scaledownfrombottom" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb="http://i.vimeocdn.com/video/647145278_640.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Top 5 Public Holiday Questions - Workplace Adviceline" data-param1="04/05/2017" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="https://i.vimeocdn.com/video/647145278_640.jpg"  alt=""  data-bgposition="center center" data-bgfit="100% 0%" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption   tp-resizeme tp-videolayer" 
+			 id="slide-211615865-layer-1" 
+			 data-x="" 
+			 data-y="" 
+			data-type="video" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"opacity:0;","speed":700,"to":"o:1;","delay":1000,"ease":"Power1.easeInOut"},{"delay":"wait","speed":700,"to":"opacity:0;","ease":"Power1.easeInOut"}]'
+ data-vimeoid="211615865" data-videoattributes="title=0&amp;byline=0&amp;portrait=0&amp;api=1" data-videowidth="1230" data-videoheight="692" data-videoloop="none"			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+			data-autoplay="on" 
+			data-nextslideatend="true" 
+			data-volume="100" data-forcerewind="on"
+			style="z-index: 5;text-transform:left;"> </div>
+	</li>
+	<!-- SLIDE  -->
+	<li data-index="rs-211616481" data-transition="scaledownfrombottom" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb="http://i.vimeocdn.com/video/627856699_640.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="The GIG economy" data-param1="04/05/2017" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="https://i.vimeocdn.com/video/627856699_640.jpg"  alt=""  data-bgposition="center center" data-bgfit="100% 0%" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption   tp-resizeme tp-videolayer" 
+			 id="slide-211616481-layer-1" 
+			 data-x="" 
+			 data-y="" 
+			data-type="video" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"opacity:0;","speed":700,"to":"o:1;","delay":1000,"ease":"Power1.easeInOut"},{"delay":"wait","speed":700,"to":"opacity:0;","ease":"Power1.easeInOut"}]'
+ data-vimeoid="211616481" data-videoattributes="title=0&amp;byline=0&amp;portrait=0&amp;api=1" data-videowidth="1230" data-videoheight="692" data-videoloop="none"			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+			data-autoplay="on" 
+			data-nextslideatend="true" 
+			data-volume="100" data-forcerewind="on"
+			style="z-index: 6;text-transform:left;"> </div>
+	</li>
+	<!-- SLIDE  -->
+	<li data-index="rs-211425079" data-transition="scaledownfrombottom" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb="http://i.vimeocdn.com/video/627450703_640.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="ROI on Graduates" data-param1="04/03/2017" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="https://i.vimeocdn.com/video/627450703_640.jpg"  alt=""  data-bgposition="center center" data-bgfit="100% 0%" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption   tp-resizeme tp-videolayer" 
+			 id="slide-211425079-layer-1" 
+			 data-x="" 
+			 data-y="" 
+			data-type="video" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"opacity:0;","speed":700,"to":"o:1;","delay":1000,"ease":"Power1.easeInOut"},{"delay":"wait","speed":700,"to":"opacity:0;","ease":"Power1.easeInOut"}]'
+ data-vimeoid="211425079" data-videoattributes="title=0&amp;byline=0&amp;portrait=0&amp;api=1" data-videowidth="1230" data-videoheight="692" data-videoloop="none"			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+			data-autoplay="on" 
+			data-nextslideatend="true" 
+			data-volume="100" data-forcerewind="on"
+			style="z-index: 7;text-transform:left;"> </div>
+	</li>
+	<!-- SLIDE  -->
+	<li data-index="rs-206182432" data-transition="scaledownfrombottom" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb="http://i.vimeocdn.com/video/621174045_640.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="The Rise of the Robots" data-param1="02/28/2017" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="https://i.vimeocdn.com/video/621174045_640.jpg"  alt=""  data-bgposition="center center" data-bgfit="100% 0%" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption   tp-resizeme tp-videolayer" 
+			 id="slide-206182432-layer-1" 
+			 data-x="" 
+			 data-y="" 
+			data-type="video" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"opacity:0;","speed":700,"to":"o:1;","delay":1000,"ease":"Power1.easeInOut"},{"delay":"wait","speed":700,"to":"opacity:0;","ease":"Power1.easeInOut"}]'
+ data-vimeoid="206182432" data-videoattributes="title=0&amp;byline=0&amp;portrait=0&amp;api=1" data-videowidth="1230" data-videoheight="692" data-videoloop="none"			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+			data-autoplay="on" 
+			data-nextslideatend="true" 
+			data-volume="100" data-forcerewind="on"
+			style="z-index: 8;text-transform:left;"> </div>
+	</li>
+	<!-- SLIDE  -->
+	<li data-index="rs-203047362" data-transition="scaledownfrombottom" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb="http://i.vimeocdn.com/video/617238052_640.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="The Future of Recruitment 2017" data-param1="02/07/2017" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="https://i.vimeocdn.com/video/617238052_640.jpg"  alt=""  data-bgposition="center center" data-bgfit="100% 0%" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-caption   tp-resizeme tp-videolayer" 
+			 id="slide-203047362-layer-1" 
+			 data-x="" 
+			 data-y="" 
+			data-type="video" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"opacity:0;","speed":700,"to":"o:1;","delay":1000,"ease":"Power1.easeInOut"},{"delay":"wait","speed":700,"to":"opacity:0;","ease":"Power1.easeInOut"}]'
+ data-vimeoid="203047362" data-videoattributes="title=0&amp;byline=0&amp;portrait=0&amp;api=1" data-videowidth="1230" data-videoheight="692" data-videoloop="none"			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+			data-autoplay="on" 
+			data-nextslideatend="true" 
+			data-volume="100" data-forcerewind="on"
+			style="z-index: 9;text-transform:left;"> </div>
+	</li>
+	<!-- SLIDE  -->
+	<li data-index="rs-194416937" data-transition="scaledownfrombottom" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb="http://i.vimeocdn.com/video/606369823_640.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Leading Teams in Changing Times" data-param1="12/05/2016" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="https://i.vimeocdn.com/video/606369823_640.jpg"  alt=""  data-bgposition="center center" data-bgfit="100% 0%" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption   tp-resizeme tp-videolayer" 
+			 id="slide-194416937-layer-1" 
+			 data-x="" 
+			 data-y="" 
+			data-type="video" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"opacity:0;","speed":700,"to":"o:1;","delay":1000,"ease":"Power1.easeInOut"},{"delay":"wait","speed":700,"to":"opacity:0;","ease":"Power1.easeInOut"}]'
+ data-vimeoid="194416937" data-videoattributes="title=0&amp;byline=0&amp;portrait=0&amp;api=1" data-videowidth="1230" data-videoheight="692" data-videoloop="none"			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+			data-autoplay="on" 
+			data-nextslideatend="true" 
+			data-volume="100" data-forcerewind="on"
+			style="z-index: 10;text-transform:left;"> </div>
+	</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+</div><!-- END REVOLUTION SLIDER -->
+		<script type="text/javascript">
+var revapi9,
+	tpj=jQuery;
+			
+tpj(document).ready(function() {
+	if(tpj("#rev_slider_9_1").revolution == undefined){
+		revslider_showDoubleJqueryError("#rev_slider_9_1");
+	}else{
+		revapi9 = tpj("#rev_slider_9_1").show().revolution({
+			sliderType:"standard",
+			// jsFileLocation:"//thosedigitalthoughts.com/vimeo/assets/js/",
+			jsFileLocation:"//localhost/apprentice/wp-content/plugins/revslider/public/assets/js/",
+			sliderLayout:"auto",
+			dottedOverlay:"none",
+			delay:9000,
+			navigation: {
+				keyboardNavigation:"off",
+				keyboard_direction: "horizontal",
+				mouseScrollNavigation:"off",
+ 							mouseScrollReverse:"default",
+				onHoverStop:"off",
+				arrows: {
+					style:"uranus",
+					enable:true,
+					hide_onmobile:true,
+					hide_under:778,
+					hide_onleave:true,
+					hide_delay:200,
+					hide_delay_mobile:1200,
+					tmp:'',
+					left: {
+						h_align:"left",
+						v_align:"center",
+						h_offset:20,
+						v_offset:0
+					},
+					right: {
+						h_align:"right",
+						v_align:"center",
+						h_offset:20,
+						v_offset:0
+					}
+				}
+				,
+				thumbnails: {
+					style:"erinyen",
+					enable:true,
+					width:200,
+					height:113,
+					min_width:170,
+					wrapper_padding:30,
+					wrapper_color:"rgba(51,51,51,1)",
+					tmp:'<span class="tp-thumb-over"></span><span class="tp-thumb-image"></span><span class="tp-thumb-title">{{title}}</span><span class="tp-thumb-more"></span>',
+					visibleAmount:10,
+					hide_onmobile:false,
+					hide_onleave:false,
+					direction:"horizontal",
+					span:true,
+					position:"outer-top",
+					space:20,
+					h_align:"center",
+					v_align:"top",
+					h_offset:0,
+					v_offset:0
+				}
+			},
+			visibilityLevels:[1240,1024,778,480],
+			gridwidth:1230,
+			gridheight:692,
+			lazyType:"none",
+			shadow:0,
+			spinner:"spinner2",
+			stopLoop:"on",
+			stopAfterLoops:0,
+			stopAtSlide:1,
+			shuffle:"off",
+			autoHeight:"off",
+			disableProgressBar:"on",
+			hideThumbsOnMobile:"off",
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			debugMode:false,
+			fallbacks: {
+				simplifyAll:"off",
+				nextSlideOnWindowFocus:"off",
+				disableFocusListener:false,
+			}
+		});
+	}
+	
+});	/*ready*/
+</script>
+		
+
+		</body>
+</html>

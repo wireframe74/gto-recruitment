@@ -1,0 +1,51 @@
+
+.page-heading .breadcrumb {
+    padding: 10px;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.page-heading {
+    padding-top: 0;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 40px;
+    height: 40px;
+}
+
+
+.page-heading .breadcrumb   {
+
+        li {
+        display: inline-block;
+        font-size: .9rem;
+        color: #444;
+        margin-bottom: 0;
+        float: left;
+        margin: 1px 10px 0 0;
+        }
+
+
+        li a {
+        font-weight: normal;
+        color: #333e47;
+        }
+
+}
+
+
+
+
+
+
+
+.page-heading .breadcrumb  li:first-child a {
+    text-indent: -99999px;
+    display: inline-block;
+    background: url(css/images/home-sml.svg) top 2px left no-repeat;
+    width: 14px;
+    float: left;
+    /* height: 13px; */
+}
+

@@ -1,6 +1,7 @@
 /* Downloaded from https://www.codeseek.co/ */
 section.testimonials {
   background-color: $purple;
+  overflow:hidden;
 
 }
 
@@ -24,11 +25,20 @@ section.testimonials {
 
 .owl-next {
     right: -20px;
+
+	@media (max-width:767px) {
+	right: 20px;	
+	}
+
 }
 
 
 .owl-prev {
     left: -20px;
+    
+    @media (max-width:767px) {
+    left: 20px;	
+    }
 }
 
 
@@ -42,7 +52,6 @@ background-color:#5858ad;
 }
 
 #customers-testimonials {
-
 position: relative;
 
 
@@ -67,7 +76,7 @@ position: relative;
 			width:50%; 
 			float:left;
 			background-size:cover; 
-			background: url(../images/testimonials/testimonial-image.gif) top center no-repeat;
+			background: url(css/images/testimonials/testimonial-image.gif) top center no-repeat;
 			-webkit-border-top-left-radius: 5px;
 			-webkit-border-bottom-left-radius: 5px;
 			-moz-border-radius-topleft: 5px;
@@ -76,8 +85,16 @@ position: relative;
 			border-bottom-left-radius: 5px;
 
 			@media (max-width:767px) {
-				width:100%;
-				border:1px solid
+					width:100%;	
+					height:300px;
+					-webkit-border-top-left-radius: 5px;
+					-webkit-border-top-right-radius: 5px;
+					-moz-border-radius-topleft: 5px;
+					-moz-border-radius-topright: 5px;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+					border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
 			}
 
 			
@@ -104,6 +121,7 @@ position: relative;
 		.item {
 		padding: 0;
 		font-size: 1.1rem;
+		position:relative;
 		}
 
 		.owl-item {
@@ -123,6 +141,7 @@ position: relative;
 		float: left;
 		}
 
+
 		.item-details {
 		background-color: #fff;
 		color: #444;
@@ -130,17 +149,38 @@ position: relative;
 		text-align: left;
 		float:left;
 		width:50%;
-	-webkit-border-top-right-radius: 5px;
--webkit-border-bottom-right-radius: 5px;
--moz-border-radius-topright: 5px;
--moz-border-radius-bottomright: 5px;
-border-top-right-radius: 5px;
-border-bottom-right-radius: 5px;
+		-webkit-border-top-right-radius: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+		-moz-border-radius-topright: 5px;
+		-moz-border-radius-bottomright: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		position:relative;
 
 
 		@media (max-width:767px) {
 		width:100%;
-		border:1px solid
+		-webkit-border-bottom-right-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		-moz-border-radius-bottomright: 5px;
+		-moz-border-radius-bottomleft: 5px;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-top-left-radius:0;
+		border-top-right-radius:0;
+		}
+
+		&:before {
+
+//  content    : "";
+//    position   : relative;
+//    z-index    : 2;
+//    left       : 50%;
+//    width      : 120%;
+//    height     : 40%;
+//    display    : block;
+//    background : #fff; 
+// transform: rotate(-100deg);
 		}
 
 			

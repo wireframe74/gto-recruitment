@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Modern Responsive YouTube Playlist Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Ivor">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+</style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">    
+    </head>
+    
+<body data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+	<a class="brand" href="#">Modern Responsive YouTube Playlist Player</a> <!-- TIP: Change this for the name of your file -->
+     	<div class="nav-collapse">
+        <ul class="nav">
+              <li><a href="#top" class="active">Top</a></li>
+              <li><a href="#installation">Installation</a></li>
+              <li><a href="#options">Options</a></li>
+              <li><a href="#api_key">Api Key</a></li>
+              <li><a href="#methods">Methods</a></li>
+              <li><a href="#appearance">Appearance</a></li>
+              
+          </ul>
+</div>
+	</div>
+		</div>
+			</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container">
+    
+	<div class="masthead">
+	    <h1>Modern Responsive YouTube Playlist Player</h1>
+	    <!-- <p class="marketing-byline">A guide to installing and using the plugin.</a></p> -->
+	    <p>Installation &amp; Configuration.</p>
+	    <p class="download-info"> <a href="http://codecanyon.net/user/RikdeVos#contact" class="btn btn-primary btn-large" target="_blank">Item Support</a> <a href="http://codecanyon.net/item/modern-html5-responsive-youtube-playlist-player/8619272" class="btn btn-large" target="_blank">Product Site</a> </p>
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for purchasing my item. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/rikdevos/profile">here</a>. Thanks so much!</p>
+  </div> <!-- intro -->
+      
+<section id="installation">
+	<div class="page-header">
+	  <h1>Installation <small>Installing the plugin</small></h1>
+	</div>
+
+    <h3>Copy the Files</h3>
+    <p>Installing this plugin is really easy. In your download folder is a folder called <strong>youtube-video-player</strong>. Copy that folder and its contents to your webserver.</p>
+
+<hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Including the Files</h3>
+  <p>The first thing you have to do is load the Javascript files and CSS files. Besides that you'll also need a copy of jQuery and the icon library. The "Open Sans" font is not required but recommended. Add the following code your the <strong>&lt;head&gt;</strong> of your website.<div class="alert alert-info"> <b>Note</b> Keep in mind, that you may already have included the jQuery, and that you shouldn't include the same library twice.</div></p>
+</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+&lt;!-- Open Sans --&gt;
+&lt;link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" /&gt;
+
+&lt;!-- Icons --&gt;
+&lt;link rel="stylesheet" type="text/css" media="screen" href="youtube-video-player/packages/icons/css/icons.min.css" /&gt;
+
+&lt;!-- Main Stylesheet --&gt;
+&lt;link rel="stylesheet" type="text/css" media="screen" href="youtube-video-player/css/youtube-video-player.min.css" /&gt;
+
+&lt;!-- jQuery --&gt;
+&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- Main Javascript --&gt;
+&lt;script type="text/javascript" src="youtube-video-player/js/youtube-video-player.jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- Perfect Scrollbar --&gt;
+&lt;link rel="stylesheet" type="text/css" media="screen" href="youtube-video-player/packages/perfect-scrollbar/perfect-scrollbar.css" /&gt;
+&lt;script type="text/javascript" src="youtube-video-player/packages/perfect-scrollbar/jquery.mousewheel.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="youtube-video-player/packages/perfect-scrollbar/perfect-scrollbar.js"&gt;&lt;/script&gt;
+
+</pre>
+      </div>
+        </div>
+
+    <hr />
+
+<div class="row">
+    <div class="span3">
+      <h3>Dislaying a Playlist</h3>
+      <p>You can attach a playlist to an element, so the first step is creating an element on the page where you'd like the playlist to be displayed. You can add unlimited youtube playlists on a single page.</p>
+    </div>
+<div class="span9">
+<br /><br />
+<pre class="prettyprint linenums">
+&lt;div id="myList"&gt;&lt;/div&gt;
+</pre>
+</div>
+</div>
+
+<div class="row">
+    <div class="span3">
+      <h3>Get the Playlist Source</h3>
+      <p>There are 4 kinds of playlists: custom playlists you have created, a channel playlist via user ID or user name, and an array of video ID's. The ID's for these can be found in the URL.<div class="alert alert-info"> <b>Note</b> The User ID and User Name playlists are identical, use any of the two.</div></p>
+    </div>
+<div class="span9">
+  <br />
+      <h4>Custom Playlist ID</h4>
+      <img src="assets/img/id_playlist.png" />
+      <h4>User ID</h4>
+      <img src="assets/img/id_channel.png" />
+      <h4>User Name</h4>
+      <img src="assets/img/id_user.png" />
+      <h4>Video ID</h4>
+      <img src="assets/img/id_video.png" />
+
+</div>
+</div>
+<br />
+
+<div class="row">
+    <div class="span3">
+       <h3>Call the jQuery function</h3>
+      <p>Next, attach the youtube playlist plugin to the element using jQuery. Either enter a playlist ID as 'playlist' option, a channel ID as 'channel' option, a user name as 'user' option, or a couple of video ID's as 'video' array.</p>
+    </div>
+<div class="span9">
+  <h4>Using custom playlist ID:</h4>
+<pre class="prettyprint linenums">
+&lt;script&gt;
+$(document).ready(function() {
+  $('#myList').youtube_video({
+    playlist: 'PL5A4nPQbUF8ANcyoy4...',
+    /* other options here */
+  });
+});
+&lt;/script&gt;
+</pre>
+      </div>
+        </div>
+<div class="row">
+  <div class="span3">
+    &nbsp;
+  </div>
+  <div class="span3">
+<h4>Using User ID:</h4>
+<pre class="prettyprint linenums">
+$('#myList').youtube_video({
+  channel: 'UCjOl2AUbl...',
+  /* other options here */
+});
+</pre>
+  </div>
+  <div class="span3">
+<h4>Using User Name:</h4>
+<pre class="prettyprint linenums">
+$('#myList').youtube_video({
+  user: 'someuser',
+  /* other options here */
+});
+</pre>
+  </div>
+  <div class="span3">
+<h4>Using Video ID's:</h4>
+<pre class="prettyprint linenums">
+$('#myList').youtube_video({
+  videos: ['UCjOl', 'GsQ3h'],
+  /* other options here */
+});
+</pre>
+  </div>
+</div>
+  </section> <!-- Markup -->
+
+
+<section id="options">
+    <div class="page-header">
+       <h1>Options <small>Options for the video player</small></h1>
+     </div>
+
+<div class="row">
+    <div class="span3">
+  <h3>Options</h3>
+  <p>Here's a complete list of all the options, their default values and their function. Options should be given as an object and the order doesn't matter. You cannot define the same option twice. All options are optional, except for playlist or channel option.</p>
+  <pre class="prettyprint linenums">
+$('#vd').youtube_video({
+
+playlist: false,
+channel: false,
+user: false,
+videos: false,
+api_key: '...',
+max_results: 50,
+pagination: true,
+continuous: true,
+shuffle: false,
+first_video: 0,
+show_playlist: 'auto',
+playlist_type: 'vertical',
+show_channel_in_playlist:true,
+show_channel_in_title: true,
+width: false,
+show_annotations: false,
+now_playing_text: 'Now Playing',
+load_more_text: 'Load More',
+autoplay: false,
+force_hd: false,
+hide_youtube_logo: false,
+play_control: true,
+time_indicator: 'full',
+volume_control: true,
+share_control: true,
+fwd_bck_control: true,
+youtube_link_control: true,
+fullscreen_control: true,
+playlist_toggle_control:true,
+volume: false,
+show_controls_on_load: true,
+show_controls_on_pause: true,
+show_controls_on_play: false,
+description_toggle: false,
+related: false,
+player_vars: {},
+colors: {},
+
+on_load: fn(e) {},
+on_done_loading: fn(e) {},
+on_state_change: fn(e) {},
+on_seek: fn(e) {},
+on_volume: fn(e) {},
+on_time_update: fn(e) {},
+
+});
+</pre>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Default</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+                <tr>
+                  <td><strong>playlist</strong></td>
+                  <td><code>string</code></td>
+                  <td><code>false</code></td>
+                  <td>Playlist ID of the playlist you want to display.</td>
+                </tr>
+                 <tr>
+                  <td><strong>channel</strong></td>
+                  <td><code>string</code></td>
+                  <td><code>false</code></td>
+                  <td>Channel ID of the channel you want to display.</td>
+                </tr>
+                <tr>
+                  <td><strong>user</strong></td>
+                  <td><code>string</code></td>
+                  <td><code>false</code></td>
+                  <td>User name of the user you want to display.</td>
+                </tr>
+                 <tr>
+                  <td><strong>videos</strong></td>
+                  <td><code>array</code></td>
+                  <td><code>false</code></td>
+                  <td>Array of video ID's you want to display.</td>
+                </tr>
+                 <tr>
+                  <td><strong>api_key</strong></td>
+                  <td><code>string</code></td>
+                  <td><code><em>default</em></code></td>
+                  <td>YouTube API Key. You can use the default key, but it is <strong>highly recommended</strong> you change it as the default key only supports a limited number of calls.</td>
+                </tr>
+                <tr>
+                  <td><strong>max_results</strong></td>
+                  <td><code>int</code></td>
+                  <td><code>50</code></td>
+                  <td>Amount of video's to load. The maximum of this option is 50 due to YouTube's API limitations, but with <code>pagination</code> enabled you can retrieve up to 50 video's each time.</td>
+                </tr>
+                <tr>
+                  <td><strong>pagination</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>When enabled, a button "Load More" will show to load more video's once the <code>max_results</code> limit is reached.</td>
+                </tr>
+                <tr>
+                  <td><strong>continuous</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Continue to the next video in the playlist after the video is done playing.</td>
+                </tr>
+                <tr>
+                  <td><strong>shuffle</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>false</code></td>
+                  <td>When enabled, the playlist will be shuffled upon loading.</td>
+                </tr>
+                <tr>
+                  <td><strong>first_video</strong></td>
+                  <td><code>int/string</code></td>
+                  <td><code>0</code></td>
+                  <td>Either the index of which video to show first, starting at 0 or enter the video ID of the video you want to load, eg: <code>sGJUS68N7vM</code>.</td>
+                </tr>
+                <tr>
+                  <td><strong>show_playlist</strong></td>
+                  <td><code>bool/string</code></td>
+                  <td><code>'auto'</code></td>
+                  <td>Show or hide the playlist on load with <code>true</code> or <code>false</code>. When set to <code>'auto'</code> it will automatically show or hide depending on the player's width.</td>
+                </tr>
+                <tr>
+                  <td><strong>playlist_type</strong></td>
+                  <td><code>string</code></td>
+                  <td><code>&quot;vertical&quot;</code></td>
+                  <td>Set the layout of the player. Choose either <code>&quot;vertical&quot;</code> or <code>&quot;horizontal&quot;</code>.</td>
+                </tr>
+                <tr>
+                  <td><strong>show_channel_in_playlist</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Display the channel name in the playlist of videos.</td>
+                </tr>
+                <tr>
+                  <td><strong>show_channel_in_title</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Display the channel name in the title of the video.</td>
+                </tr>
+                <tr>
+                  <td><strong>width</strong></td>
+                  <td><code>int</code></td>
+                  <td><code><em>100%</em></code></td>
+                  <td>The width of the video. By default it is 100% of the parent width and scales automatically.</td>
+                </tr>
+                <tr>
+                  <td><strong>now_playing_text</strong></td>
+                  <td><code>string</code></td>
+                  <td><code>&quot;Now Playing&quot;</code></td>
+                  <td>Now playing text in the playlist.</td>
+                </tr>
+                <tr>
+                  <td><strong>load_more_text</strong></td>
+                  <td><code>string</code></td>
+                  <td><code>&quot;Load More&quot;</code></td>
+                  <td>Load more text in the playlist.</td>
+                </tr>
+                <tr>
+                  <td><strong>autoplay</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>false</code></td>
+                  <td>Autoplay the video when the page loads.</td>
+                </tr>
+                <tr>
+                  <td><strong>force_hd</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>false</code></td>
+                  <td>Force the player to show HD (720p/1080p) content.</td>
+                </tr>
+                <tr>
+                  <td><strong>hide_youtube_logo</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>false</code></td>
+                  <td>This option lets you use a YouTube player that does not show a YouTube logo.</td>
+                </tr>
+                <tr>
+                  <td><strong>play_control</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Show the play/pause button in the controls bar.</td>
+                </tr>
+                <tr>
+                  <td><strong>time_indicator</strong></td>
+                  <td><code>bool/string</code></td>
+                  <td><code>&quot;full&quot;</code></td>
+                  <td>Show or hide to elapsed time in the controls bar with <code>true</code> or <code>false</code>. To show both the elapsed time and end time, enter <code>&quot;full&quot;</code>.</td>
+                </tr>
+                <tr>
+                  <td><strong>volume_control</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Show a volume slider in the controls bar to adjust the playback volume.</td>
+                </tr>
+                <tr>
+                  <td><strong>share_control</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Display button to share the video on facebook, twitter or google+.</td>
+                </tr>
+                <tr>
+                  <td><strong>fwd_bck_control</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Display a forward and backward button for users to cycle through the playlist.</td>
+                </tr>
+                <tr>
+                  <td><strong>youtube_link_control</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Show a YouTube link in the control bar which opens the video on youtube.com when clicked.</td>
+                </tr>
+                <tr>
+                  <td><strong>fullscreen_control</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Display a button in the controls bar to view the video in fullscreen. Note: not all browsers support fullscreen. On these browsers the button will always be hidden.</td>
+                </tr>
+                <tr>
+                  <td><strong>playlist_toggle_control</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Display a button in the controls bar to toggle the playlist on the side.</td>
+                </tr>
+                <tr>
+                  <td><strong>volume</strong></td>
+                  <td><code>int</code></td>
+                  <td><code><em>default</em></code></td>
+                  <td>The starting playback volume of the video. This is be a number between 0.0 and 1.0. By default it's youtube's default playback volume.</td>
+                </tr>
+                <tr>
+                  <td><strong>show_controls_on_load</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Whether or not to show the controls upon loading the page. When disabled, the user will only see a play button on top of the poster image upon loading the page.</td>
+                </tr>
+                <tr>
+                  <td><strong>show_controls_on_pause</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>true</code></td>
+                  <td>Whether or not to show the controls when the video is paused.</td>
+                </tr>
+                <tr>
+                  <td><strong>show_controls_on_play</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>false</code></td>
+                  <td>Whether or not to show the controls when the video is playing.</td>
+                </tr>
+                <tr>
+                  <td><strong>description_toggle</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>false</code></td>
+                  <td>When enabled it will show a little button in the right top corner which toggle's the video description.</td>
+                </tr>
+                <tr>
+                  <td><strong>related</strong></td>
+                  <td><code>bool</code></td>
+                  <td><code>false</code></td>
+                  <td>When enabled it will show related videos while paused or stopped.</td>
+                </tr>
+                <tr>
+                  <td><strong>player_vars</strong></td>
+                  <td><code>object</code></td>
+                  <td><code>{ ... }</code></td>
+                  <td>Additional YouTube <a href="https://developers.google.com/youtube/player_parameters?playerVersion=HTML5&amp;hl=nl" target="_blank">player parameters</a>.</td>
+                </tr>
+                <tr>
+                  <td><strong>colors</strong></td>
+                  <td><code>object</code></td>
+                  <td><code>{ ... }</code></td>
+                  <td>Customize the colors here. Read more about this in one of the following chapters.</td>
+                </tr>
+
+                </tbody>
+            </table>
+      </div>
+        </div>
+
+        <div class="row">
+      <div class="span3">
+        <h3>Callbacks</h3>
+        <p>These callbacks are fired when various events happen. An example of how to use them:</p>
+<pre class="prettyprint linenums">
+$('#vd').youtube_video({
+playlist: '...',
+on_play: function() {
+  alert('The play button was clicked');
+},
+on_seek: function(seconds) {
+  alert('The video was seeked to '+seconds+' seconds');
+}
+});
+</pre>
+     </div>
+     <div class="span9">
+            <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>Name</th>
+                  <th>Parameter</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+                <tr>
+                  <td><strong>on_load</strong></td>
+                  <td><code><em>video_obj</em></code></td>
+                  <td>Called when a new video is being loaded. The parameter returns the "snippet" part from the YouTube API containing details about the new video.</td>
+                </tr>
+                <tr>
+                  <td><strong>on_done_loading</strong></td>
+                  <td><code>videos</code></td>
+                  <td>Called when the playlist has finished loading. The parameter returns the playlist with videos and video details.</td>
+                </tr>
+                <tr>
+                  <td><strong>on_state_change</strong></td>
+                  <td><code>state</code></td>
+                  <td>Called when the state of the video changes.<ul>
+          <li><code>-1</code> – unstarted</li>
+          <li><code>0</code> – ended</li>
+          <li><code>1</code> – playing</li>
+          <li><code>2</code> – paused</li>
+          <li><code>3</code> – buffering</li>
+          <li><code>5</code> – video cued</li>
+        </ul></td>
+                </tr>
+                <tr>
+                  <td><strong>on_seek</strong></td>
+                  <td><code>seconds</code></td>
+                  <td>Called when the video seeks. The parameter returns the time in seconds to where the video is seeked.</td>
+                </tr>
+                <tr>
+                  <td><strong>on_volume</strong></td>
+                  <td><code>volume</code></td>
+                  <td>Called when the user changes the playback volume. The parameter returns the new volume, an integer between 0.0 and 1.0</td>
+                </tr>
+                <tr>
+                  <td><strong>on_time_update</strong></td>
+                  <td><code>seconds</td>
+                  <td>Called each time the time of the video changes. When it's playing this function will roughly fire every half a second. The parameter returns the current time in seconds of the video.</td>
+                </tr>
+
+          </tbody>
+            </table>
+     </div>
+    </div>
+
+  </section>
+      <!-- Styles -->
+      
+
+
+      <hr />
+
+<section id="api_key">
+    <div class="page-header">
+       <h1>API Key <small>Registering a YouTube Data V3 API Key</small></h1>
+     </div>
+
+<div class="row">
+    <div class="span12">
+  <p>It is <strong>highly recommended</strong> you register your own key and use it instead of the default key. The reason for this is that many people will be using the default key and it has a limited number of requests per month. Once you have registered your own key, use it as the 'api_key' option in the options.</p>
+  <p>For a guide on registering your own API key <a href="register_api_key.pdf" target="_blank">click here</a>.</p>
+  </div>
+</div>
+<hr />
+
+</section>
+<hr />
+
+  <section id="methods">
+    <div class="page-header">
+       <h1>Methods <small>Methods for the video player</small></h1>
+     </div>
+
+<div class="row">
+    <div class="span12">
+  <p>The video player has a couple of methods you can call. They are functions you can call to control the video player's behavior, like pausing it or controlling the volume. Methods are for more advanced users who wish to integrate the video player into their own apps.</p>
+  </div>
+</div>
+<hr />
+
+<div class="row">
+    <div class="span3">
+      <h3>Usage</h3>
+      <p>Once you have initialized the video player (with the youtube_video function), you can call its methods.</p>
+    </div>
+<div class="span9">
+<pre class="prettyprint linenums">
+&lt;script&gt;
+    $('#myVideo').youtube_video_play();    // Play the video
+&lt;/script&gt;
+</pre>
+<pre class="prettyprint linenums">
+&lt;script&gt;
+    $('#myVideo').youtube_video_seek(15);  // Seek to 15 seconds
+&lt;/script&gt;
+</pre>
+      </div>
+        </div>
+
+<hr />
+
+<div class="row">
+      <div class="span3">
+        <h3>Available Methods</h3>
+        <p>Here is a list of the available methods you can call and a description.</p>
+     </div>
+     <div class="span9">
+            <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>Name</th>
+                  <th>Parameter</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+                <tr>
+                  <td><strong>youtube_video_play</strong></td>
+                  <td><code><em>none</em></code></td>
+                  <td>The video will start playing.</td>
+                </tr>
+                 <tr>
+                  <td><strong>youtube_video_pause</strong></td>
+                  <td><code><em>none</em></code></td>
+                  <td>The video will pause.</td>
+                </tr>
+                <tr>
+                  <td><strong>youtube_video_stop</strong></td>
+                  <td><code><em>none</em></code></td>
+                  <td>The video will stop playing and buffering.</td>
+                </tr>
+                <tr>
+                  <td><strong>youtube_video_load</strong></td>
+                  <td><code><em>index</em></code></td>
+                  <td>Index of the video in the playlist to load.</td>
+                </tr>
+                <tr>
+                  <td><strong>youtube_video_seek</strong></td>
+                  <td><code>seconds</code></td>
+                  <td>The video will jump to the number of seconds in time.</td>
+                </tr>
+                <tr>
+                  <td><strong>youtube_video_volume</strong></td>
+                  <td><code>volume</code></td>
+                  <td>The playback volume will be adjusted to the new volume. The parameter 'volume' is an integer between 0.0 and 1.0</td>
+                </tr>
+          </tbody>
+            </table>
+     </div>
+    </div>
+
+</section>
+
+      <hr />
+
+  <section id="appearance">
+    <div class="page-header">
+       <h1>Appearance <small>Customize the player's colors</small></h1>
+     </div>
+
+<div class="row">
+    <div class="span12">
+  <p>There are a couple of colors you can customize to make the player your own. All the colors have to be set in the 'color' option. Colors can be hexadecimals (eg <code>#D382FF</code>), but also rgba's to make them translucent (eg <code>rgba(255, 144, 144, 0.5)</code>).</p>
+  </div>
+</div>
+<hr />
+
+<div class="row">
+      <div class="span3">
+        <h3>Parts To Color</h3>
+        <p>These are the available parts you can color and their default values.</p>
+     </div>
+     <div class="span9">
+<pre class="prettyprint linenums">
+$('#myPlaylist').youtube_video({
+  playlist: '...',
+  colors: {
+    controls_bg:      'rgba(0,0,0,.75)',
+    buttons:          'rgba(255,255,255,.5)',
+    buttons_hover:    'rgba(255,255,255,1)',
+    buttons_active:   'rgba(255,255,255,1)',
+    time_text:        '#FFFFFF',
+    bar_bg:           'rgba(255,255,255,.5)',
+    buffer:           'rgba(255,255,255,.25)',
+    fill:             '#FFFFFF',
+    video_title:      '#FFFFFF',
+    video_channel:    '#DFF76D',
+    playlist_overlay: 'rgba(0,0,0,.75)',
+    playlist_title:   '#FFFFFF',
+    playlist_channel: '#DFF76D',
+    scrollbar:        '#FFFFFF',
+    scrollbar_bg:     'rgba(255,255,255,.25)',
+  },
+  /* other options here */
+});
+</pre>
+     </div>
+    </div>
+
+</section>
+<hr />
+
+<div class="goodbye">
+    <p>Once again, thank you so much for purchasing this item. As I said at the beginning, I'd be glad to help you if you have any questions relating to this item. No guarantees, but I'll do my best to assist. If you have a more general question relating to the items on CodeCanyon, you might consider visiting the <a href="http://codecanyon.net/forums" target="_blank">forums</a> and asking your question in the "Item Discussion" section.</p>
+  </div>
+
+      <hr />
+
+<footer>
+    <p>&copy; <a href="http://rikdevos.com/">Rik de Vos</a> 2014</p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-transition.js"></script> 
+<script src="assets/js/bootstrap-alert.js"></script> 
+<script src="assets/js/bootstrap-modal.js"></script> 
+<script src="assets/js/bootstrap-dropdown.js"></script> 
+<script src="assets/js/bootstrap-scrollspy.js"></script> 
+<script src="assets/js/bootstrap-tab.js"></script> 
+<script src="assets/js/bootstrap-tooltip.js"></script> 
+<script src="assets/js/bootstrap-popover.js"></script> 
+<script src="assets/js/bootstrap-button.js"></script> 
+<script src="assets/js/bootstrap-collapse.js"></script>
+
+</body>
+</html>

@@ -12,7 +12,9 @@ body {
 	background-color: #FFF;
 
     
-
+> .section:first-child {
+	padding-top:60px;
+}
  
 	
 
@@ -102,7 +104,7 @@ width: 100%;
 	span:first-child a { 
 		text-indent: -99999px;
 		display: inline-block;
-		background: url(../images/home-sml.svg) top 2px left no-repeat;
+		background: url(css/images/home-sml.svg) top 2px left no-repeat;
 		width: 14px;
 		float:left;
 /* 		height: 13px; */
@@ -138,12 +140,17 @@ width: 100%;
 
 
 
+.aig-header {
 
 
+ top:0;
+
+ }
 
 .aig-header.sticky-aig-header {
-    position: fixed;
+    position: fixed; 
     z-index:10;
+   
  }
 
 
@@ -199,6 +206,7 @@ width: 100%;
 padding-top: 18px;
 z-index: 2;
 transition: background-color .2s;
+    top:0;
 }
 
 
@@ -222,8 +230,12 @@ background: linear-gradient(135deg, #124589 0%,#124589 0%,#573988 86%); /* W3C, 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#124589', endColorstr='#573988',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 
+h1 {
+	max-width:500px;
+}
 	h2,
-	h1{
+	h1,
+	h4{
 		color: #fff;
 	}
 	
@@ -265,6 +277,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#124589', end
 
 }
 
+
+.section.main-content {
+	padding-top:50px
+}
 .section {
 	padding: 80px 0;
 	position:relative;
@@ -425,5 +441,55 @@ margin-top: 40px!important;
 
 }
 
+// 5 COL LAYOUT
 
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
  
+
+
+
+@media (min-width: 768px) {
+	.modal-content {
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	box-shadow: none;
+	}
+}
+
+
+body .page-heading .breadcrumb {
+	padding-left: 0;
+}

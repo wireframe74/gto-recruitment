@@ -1,3 +1,10 @@
+#menu-main-menu-1 {
+
+padding: 0;
+margin: 5px 0 0 -30px;
+text-align: center;
+
+} 
 
  
  nav { position: relative;  }
@@ -5,23 +12,45 @@
  nav > ul.container {  position:static; z-index:10000; padding:6px 0 0 194px; text-align:left;}
  li.menu-item  { display:inline-block;  z-index:10000 }
 
- nav li.menu-item > a {  
+ header nav li.menu-item > a {  
  z-index: 100000; 
  position: relative;
     &:hover {
         border-bottom:2px solid #fff; 
-        color:#ccc;
+       color:#fff;
     }
  }
 
-  nav li.menu-item > a:hover {
-        border-bottom:2px solid #fff; 
-        color:#fff;
- }
+//    header nav li.menu-item > a:hover {
+//         border-bottom:2px solid #fff; 
+//         color:#fff;
+//  }
  
- nav li.menu-item:last-child > a { padding-right: 0;}
- nav li.menu-item:first-child > a { padding-left: 0;}
+nav li.menu-item:last-child > a {
+padding: 26px 12px;
+margin-left: 10px;
 
+    @media (max-width:991px) {
+     padding: 10px 12px;   
+    }
+    
+}
+
+
+
+ nav li.menu-item:first-child > a { padding-left: 0;}
+ nav li.menu-item > a {
+padding: 0 12px;
+    margin: 0 1px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 2.1;
+    color: #fff;
+    text-decoration: none;
+    z-index: 100000;
+    position: relative;
+    font-weight:bold; 
+ }
 
 
 
@@ -86,7 +115,7 @@ font-weight:600;
 
     &:hover {
     border-bottom:2px solid #fff;
-    text-decoration: none;
+    text-decoration: none; 
     }
 
 }
@@ -100,7 +129,7 @@ font-weight:600;
 
 #main-menu {
 
-    @media(max-width:989px) {
+    @media(max-width:991px) {
         display: none
     }
 
@@ -137,7 +166,7 @@ padding: 10px;
 ul.sub-menu > li > a  {
 color:#fff;
 font-size:1rem; 
-    padding: 10px 13px;
+    padding: 8px 13px;
     border-radius: 50px;
     text-decoration:none;
         border: 1px solid transparent;
@@ -184,10 +213,10 @@ font-size:1rem;
 .aig-header .menu-item.home  {
     
     position: relative;
-    top: 3px; 
+    top: 6px; 
 
     a {
-    background: url(../images/icons/home.svg) top left no-repeat;
+    background: url(css/images/icons/home.svg) top left no-repeat;
     width: 17px;
     text-indent: -9999px;
     background-size: 16px;
@@ -208,12 +237,12 @@ font-size:1rem;
         width: 9px;
         height: 9px;
         overflow: hidden;
-        border: 1px solid #fff;
+        border: 1px solid #fff; 
         border-top: 1px solid transparent;
         border-left: 1px solid transparent;
         opacity: .75;
         position: relative;
-        left: 10px;
+        left: 12px;
         top: -3px;
         transform: rotate(45deg);
         transition: all .3s ease-out;
@@ -229,7 +258,7 @@ font-size:1rem;
     li.menu-item-has-children > a:focus:after, 
     li.menu-item-has-children > a:hover:after {
         top: 0px;
-        left: 6px;
+  
         transform: rotate(-135deg);
     }
 

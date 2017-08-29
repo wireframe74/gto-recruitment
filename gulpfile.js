@@ -6,6 +6,35 @@ var prefix = require('gulp-autoprefixer');
 var postcss = require('gulp-postcss');
 var cssnext = require('postcss-cssnext');
 var connect = require('gulp-connect');
+var uncss = require('gulp-uncss');
+// var deleteUnusedImages = require('gulp-delete-unused-images');
+// var plumber = require('gulp-plumber');
+var autoprefixerOptions = {
+  browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+};
+
+var htmltidy = require('gulp-htmltidy');
+
+
+const imagemin = require('gulp-imagemin');
+
+gulp.task('imageMin', () =>
+    gulp.src('css/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/css/images'))
+);
+
+
+
+gulp.task('htmlTidy', function() {
+  return gulp.src('./*.html')
+  .pipe(htmltidy({doctype: 'html5',
+                       hideComments: true,
+                       indent: true}))
+        .pipe(gulp.dest('build/'));;
+});
+
+
 
 // var paths = {
 //     styles: {
@@ -15,17 +44,7 @@ var connect = require('gulp-connect');
 //     }
 // }
 
-// // gulp.task('prefix', function (){
-// //     return gulp.src(paths.styles.files)
-// //         .pipe(sourcemaps.init())
-// //         .pipe(sass())
-// //         .pipe(prefix())
-// //         .pipe(sourcemaps.write('.', {
-// //             includeContent: false,
-// //             sourceRoot: '../../../src/scss'
-// //         }))
-// //         .pipe(gulp.dest(paths.styles.dest + '/prefix'));
-// // });
+
 
 // // gulp.task('noPrefix', function (){
 // //     return gulp.src(paths.styles.files)
@@ -79,6 +98,33 @@ var connect = require('gulp-connect');
 // var sass = require('gulp-sass');
 
 // var sourcemaps = require('gulp-sourcemaps');
+
+// gulp.task('removeImages', function () {
+ 
+// gulp.src(['images/**/*', '*.html'])
+//   .pipe(plumber())
+//   .pipe(deleteUnusedImages({
+//     log: true,
+//     delete: true
+//   }))
+//   .pipe(gulp.dest('./deploy'));
+
+
+// });
+
+
+
+gulp.task('uncss', function () {
+    return gulp.src('css/styles.css')
+   
+        .pipe(uncss({
+            html: ['./*.html'],
+             ignore: [/\.reversed/, /\.modal/, '.affix', /\.owl-carousel/, /\.owl-item/, /\#oc-clients/, /\.carousel-inner/]
+        }))
+        .pipe(gulp.dest('./out'));
+});
+
+
      
 gulp.task('myStyles', function () {
  var processors = [
@@ -88,7 +134,11 @@ gulp.task('myStyles', function () {
     gulp.src('sass/*.scss')
      
          .pipe(sourcemaps.init())
-            .pipe(sass())   
+            .pipe(sass({outputStyle: 'expanded'}))  
+             .pipe(prefix({
+            browsers: ['last 2 versions'],
+            cascade: false
+        })) 
     .pipe(sass().on('error', sass.logError))    
     .pipe(sourcemaps.write('.', {
             includeContent: false,
@@ -109,3 +159,4 @@ gulp.task('watchMyStyles', function() {
 });
 
 gulp.task('default', ['watchMyStyles', 'connect']);
+gulp.task('server', [ 'connect']);

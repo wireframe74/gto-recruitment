@@ -19,8 +19,8 @@ top:6px;
 
 	.menu-button {
     display: inline-block;
-    top: -4px;
-    right: 20px;
+       top: -3px;
+    right: 25px;
     color: #fff
 
 	}
@@ -85,7 +85,7 @@ Responsive Menu
 
 
 .menu-item.home a {
-background: url(../images/icons/home.svg) top left no-repeat;
+background: url(css/images/icons/home.svg) top left no-repeat;
     width: 17px;
     text-indent: -9999px;
     background-size: 16px;
@@ -94,6 +94,8 @@ background: url(../images/icons/home.svg) top left no-repeat;
     top:10px;
     left: 20px;
     padding-bottom: 0;
+    margin: 10px 0 30px;
+    height:20px;
 }
 
  nav > ul > li > a:hover,
@@ -118,6 +120,14 @@ nav > ul > li > a  {
   float: left;
   width: 100%;
   display: block;
+  padding:10px 20px;
+  font-size:1.1rem;
+  font-weight:bold;
+  line-height:23px;
+
+  &:hover {
+    font-weight:bold;
+  }
 
 }
 
@@ -350,7 +360,7 @@ body .aig-header  .responsive-menu .menu-button {
    You need this once per page no matter how many menu trees or different themes you use.
 -------------------------------------------------------------------------------------------*/
 
-.sm{position:relative;z-index:9999;}
+.sm{position:relative;z-index:9;}
 .sm,.sm ul,.sm li{display:block;list-style:none;margin:0;padding:0;line-height:normal;direction:ltr;text-align:left;-webkit-tap-highlight-color:rgba(0,0,0,0);}
 .sm-rtl,.sm-rtl ul,.sm-rtl li{direction:rtl;text-align:right;}
 .sm>li>h1,.sm>li>h2,.sm>li>h3,.sm>li>h4,.sm>li>h5,.sm>li>h6{margin:0;padding:0;}
@@ -363,26 +373,17 @@ body .aig-header  .responsive-menu .menu-button {
 
 
 
-.sm-blue {
-  background: transparent;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-}
+
 .sm-blue a, .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active {
   padding: 10px 20px;
   /* make room for the toggle button (sub indicator) */
   padding-right: 58px;
+  font-weight:bold;
 
   color: white;
 
   font-size:1.1rem;
-  font-weight: normal;
+ 
   line-height: 23px;
   text-decoration: none;
   text-transform: uppercase;
@@ -413,11 +414,11 @@ body .aig-header  .responsive-menu .menu-button {
   text-align: center;
   text-shadow: none;
   background: rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
 }
 .sm-blue a.highlighted span.sub-arrow:before {
   display: block;
@@ -433,17 +434,18 @@ body .aig-header  .responsive-menu .menu-button {
 .sm-blue ul a, .sm-blue ul a:hover, .sm-blue ul a:focus, .sm-blue ul a:active {
   background: transparent;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.1rem;
   text-shadow: none;
   border-left: 8px solid transparent;
 }
+
 
 .sm-blue ul a.disabled {
   color: #b3b3b3;
 }
 
 .sm-blue ul li {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: none;
 }
 .sm-blue ul li:first-child {
   border-top: 0;
@@ -479,3 +481,11 @@ overflow: hidden;
 
 
 
+.responsive-menu .sub-menu li a {
+  font-weight:normal;
+
+    &:hover {
+      font-weight:normal; 
+    }
+    
+}

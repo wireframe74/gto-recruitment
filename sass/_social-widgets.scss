@@ -1,0 +1,818 @@
+#twitter-feed ul {
+display: flex;
+	flex-wrap: wrap;
+
+	@media (min-width:0) {
+		width:100%;
+		display:block;
+	}
+
+		li {
+		
+		position: relative;
+		min-height: 320px;
+		padding: 10px 0;
+		margin: 5px;
+
+
+
+   		@media (min-width:0) {
+   			width:100%;
+   			float:left;
+   			min-height:0;
+   			padding-bottom: 70px;
+   		 p {
+   		 		font-size:1.1rem;
+   		 		line-height:1.5
+   		 }
+   		}
+
+		@media (min-width:530px) {
+		width:48%;
+		min-height: 280px;
+
+			p {
+			font-size:1.1rem;
+			line-height:1.4;
+			}
+		}
+
+		@media (min-width:992px) {
+			
+			width: 23%;
+	
+		}
+
+
+			.tweet {
+			padding:0;
+			color: #308ab3;
+
+					a {
+						font-weight:bold;
+						color:inherit;
+						word-wrap:break-word;
+					}
+			}
+
+		
+		}
+ 
+ 
+ 
+
+		.interact {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		padding: 0;
+		background: #34a9df;
+		color: #fff;
+		margin:0;
+		    padding: 16px 10px;
+		    color: #308ab3;
+
+			a {
+				color: #fff;
+				text-indent: -99999px;
+				
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+			
+				margin: 3px 5px 0;
+				float: left;
+	
+			}
+
+			a.social-logo {
+			text-indent: 0;	
+
+			.fa-twitter:before {
+			font-size:27px;
+			}
+
+
+			}
+
+
+			a.twitter_reply_icon {
+				background:url(css/images/icons/reply.svg) center left no-repeat;
+					background-size: 80%;
+			}
+
+			a.twitter_retweet_icon {
+				background:url(css/images/icons/retweet-arrows-symbol.svg) center left no-repeat;
+				background-size: 100%;
+			}
+
+			a.twitter_fav_icon {
+				background:url(css/images/icons/star.svg) center left no-repeat;
+					background-size: 80%;
+			}
+
+		}
+
+
+	}
+
+
+
+
+// FACEBOOK
+
+
+/*
+* ===========================================================
+* SOCIAL RAIL - MAIN CSS
+* ===========================================================
+* Social stream of Facebook and Twitter
+* Pixor - Copyright (c) Federico Schiocchet - Pixor
+*/
+
+/*
+* ===========================================================
+* SOCIAL RAIL - FACEBOOK
+* ===========================================================
+*/
+.social-feed-fb {
+	position: relative;
+	display:flex;
+	flex-wrap: wrap;
+
+	@media (min-width:0) {
+		width:100%;
+		display:block;
+	}
+
+
+}
+
+    .social-feed-fb.carousel {
+        min-height: 100px;
+    }
+
+    .social-feed-fb.flexslider > li {
+        display: none !important;
+    }
+
+    .social-feed-fb li { 
+
+    @media (min-width:0) {
+    	width:100%;
+
+    }
+        min-height: 52px;
+        padding: 0 10px 30px 10px;
+        display: none;
+        position: relative;
+        list-style-type: none;
+        text-align: left;
+
+        margin: 5px;
+		position: relative;
+		width: 23%;
+
+		
+    }
+
+    .social-feed-fb .flex-control-paging li {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .social-feed-fb ul.slides > li, .social-feed-tw ul.slides > li {
+        padding: 0;
+        height: auto !important;
+    }
+
+.fb-container {
+    padding-left: 72px;
+    text-align: left;
+}
+
+.social-feed-fb .slides .fb-container img {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.social-feed-fb ul.slides > li > .comment-list {
+    display: none;
+}
+
+.social-feed-fb li .meta-header {
+
+	display:none;
+}
+
+.social-feed-fb li .meta-header .avatar {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    border-radius: 3px;
+    overflow: hidden;
+    display:none;
+}
+
+    .social-feed-fb li .meta-header .avatar img {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+
+.social-feed-fb .flex-control-nav li {
+    z-index: 9995;
+    min-height: inherit;
+}
+
+.social-feed-fb .flex-direction-nav li.flex-nav-prev, .social-feed-fb .flex-direction-nav li.flex-nav-next {
+    min-height: 0;
+    padding: 0;
+    display: list-item;
+    position: static;
+    list-style: none !important;
+}
+
+.social-feed-fb ul.slides > li > .meta-header .avatar {
+    top: 0;
+}
+
+.social-feed-fb li .meta-header .author {
+    font-weight: bold;
+}
+
+.social-feed-fb li .meta-header .date {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.social-feed-fb li .message {
+    margin-bottom: 16px;
+    letter-spacing: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3c5a96;
+}
+
+.social-feed-fb li .story {
+    font-style: italic;
+    color: #666;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+.social-feed-fb li .media {
+    color: #8a8a8a;
+    margin: 10px 0;
+}
+
+    .social-feed-fb li .media .image {
+        margin-right: 10px;
+        float: left;
+        position: relative;
+        transform: translate3d(0,0,0);
+    }
+
+.social-feed-fb li.type-video .media .image:after {
+    width: 44px;
+    height: 44px;
+    margin-top: -22px;
+    margin-left: -22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: " ";
+    pointer-events: none;
+}
+
+.social-feed-fb li .media .media-meta {
+    float: left;
+    display: table;
+}
+
+    .social-feed-fb li .media .media-meta .name {
+        font-weight: bold;
+    }
+
+    .social-feed-fb li .media .media-meta .caption {
+        font-style: italic;
+    }
+
+.social-feed-fb li .meta-footer, .social-feed-fb li .meta-footer span {
+    font-size: 11px;
+    line-height: 16px;
+    color: #a1a1a1;
+    clear: both;
+}
+
+    .social-feed-fb li .meta-footer .seperator {
+        padding: 0 4px;
+    }
+
+.social-feed-fb li ul.like-list {
+    margin-top: 10px;
+    display: none;
+}
+
+    .social-feed-fb li ul.like-list li.like {
+        font-size: 11px;
+        line-height: 16px;
+        margin-top: 2px;
+        border-top: none;
+        background: #e0e0e0;
+        display: block;
+    }
+
+        .social-feed-fb li ul.like-list li.like:first-child {
+            margin-top: 0;
+        }
+
+.social-feed-fb li ul.comment-list {
+    margin-top: 10px;
+    border-top: 1px solid #EAEAEA;
+    padding-left: 0;
+}
+
+    .social-feed-fb li ul.comment-list li.comment {
+        font-size: 11px;
+        line-height: 16px;
+        margin-top: 2px;
+        border-top: none;
+        display: block;
+    }
+
+        .social-feed-fb li ul.comment-list li.comment:first-child {
+            margin-top: 15px;
+        }
+
+        .social-feed-fb li ul.comment-list li.comment .meta-header .author {
+        }
+
+        .social-feed-fb li ul.comment-list li.comment .meta-header .date {
+        }
+
+        .social-feed-fb li ul.comment-list li.comment .message {
+            margin-bottom: 0;
+            font-size: 13px;
+        }
+
+        .social-feed-fb li ul.comment-list li.comment .date {
+            font-size: 9px;
+            line-height: 16px;
+            color: #a1a1a1;
+        }
+
+    .social-feed-fb li ul.comment-list li.read_more {
+        min-height: 1px;
+        font-size: 9px;
+        line-height: 16px;
+        color: #a1a1a1;
+        padding: 0 10px 0 72px;
+        margin: 5px 0 -5px 0;
+        border-top: none;
+        display: block;
+    }
+
+        .social-feed-fb li ul.comment-list li.read_more a {
+            color: #a1a1a1;
+        }
+
+.social-feed-fb.no-comments ul.comment-list, .no-medias .image, .no-medias .media-meta {
+    display: none !important;
+}
+
+@media (max-width:994px) {
+    .social-feed-fb:not(.flexslider) ul li, .fb-container, .social-feed-fb > li {
+        padding-left: 40px;
+    }
+
+    .social-feed-fb li .meta-header .avatar {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 5px;
+    }
+
+        .social-feed-fb li .meta-header .avatar img {
+            width: 25px;
+            height: 25px;
+        }
+
+    .social-feed-fb li .comment .meta-header .avatar {
+        position: static;
+    }
+
+        .social-feed-fb li .comment .meta-header .avatar img {
+            margin-left: 0;
+        }
+
+    .social-feed-fb li .comment {
+        padding-left: 0 !important;
+    }
+}
+/*
+* ===========================================================
+* SOCIAL RAIL - TWITTER
+* ===========================================================
+*/
+.social-feed-tw ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-feed-tw a {
+    color: #76949F;
+    text-decoration: none;
+}
+
+    .social-feed-tw a:hover {
+        text-decoration: underline;
+    }
+
+
+.social-feed-tw .tweet {
+    padding: 15px;
+    position: relative;
+    background: white;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+    .social-feed-tw .tweet:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: white transparent transparent transparent;
+        bottom: -20px;
+        left: 50%;
+        margin-left: -10px;
+    }
+
+    .social-feed-tw.tweet .date {
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+.social-feed-tw .button {
+    background-color: rgb(105, 210, 231);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(data:image/png;base64,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);
+    width: 50px;
+    height: 50px;
+    margin: 20px auto 0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(87, 169, 185, 0.9) 0px 3px 0px 0px, transparent 0 0 0;
+    -moz-box-shadow: rgba(87, 169, 185, 0.9) 0px 3px 0px 0px, transparent 0 0 0;
+    box-shadow: rgba(87, 169, 185, 0.9) 0px 3px 0px 0px, transparent 0 0 0;
+}
+
+    .social-feed-tw .button:hover {
+        -webkit-box-shadow: rgb(105, 210, 231) 0px 3px 0px 0px, transparent 0 0 0;
+        -moz-box-shadow: rgb(105, 210, 231) 0px 3px 0px 0px, transparent 0 0 0;
+        box-shadow: rgb(105, 210, 231) 0px 3px 0px 0px, transparent 0 0 0;
+    }
+
+.social-feed-tw .slides .tweet-cnt > a, .social-feed-fb .slides img {
+    margin-left: 1px !important;
+    width: auto !important;
+    display: block;
+}
+
+.social-feed-tw.carousel {
+    min-height: 100px;
+}
+
+.social-feed-tw li > .tweet-cnt {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.social-feed-tw ul > li > div > a > img {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    border-radius: 3px;
+}
+
+.social-feed-tw ul > div > li {
+    list-style-type: none;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.social-feed-tw ul li > div > a {
+    position: absolute;
+    overflow: hidden;
+    top: 6px;
+}
+
+.social-feed-tw.feed-boxed ul li > div > a {
+    top: 36px;
+}
+
+.social-feed-tw .tweets_txt {
+    padding-left: 70px;
+    min-height: 48px;
+}
+
+    .social-feed-tw .tweets_txt span {
+        opacity: .8;
+        display: block;
+        font-size: 11px;
+    }
+
+.social-feed-tw .tweets_time {
+    font-size: 11px;
+    display: block;
+}
+
+.social-feed-tw.flexslider .tweets_txt {
+    padding-left: 70px;
+}
+
+@media (max-width:994px) {
+    .social-feed-tw .tweets_txt, .social-feed-tw.flexslider .tweets_txt {
+        padding-left: 40px;
+    }
+
+    .social-feed-tw ul > li > div > a > img {
+        width: 25px !important;
+        height: 25px !important;
+    }
+}
+
+/*
+* ===========================================================
+* SOCIAL RAIL - GLOBAL
+* ===========================================================
+*/
+[class*="social-feed-"] {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+    [class*="social-feed-"]:not(.flexslider) ul li {
+        margin-left: 0;
+        list-style: none !important;
+    }
+
+    [class*="social-feed-"] > li {
+        list-style: none !important;
+        position: relative;
+    }
+
+.flex-direction-nav {
+    position: static !important;
+}
+
+[class*="social-feed-"] a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-feed-fb li .media .image img, .social-feed-tw .tweets_media {
+    max-width: 100% !important;
+    height: auto;
+    padding: 3px;
+    border: 1px solid #DDD; 
+    border-radius: 6px;
+    display: block;
+    width: inherit !important;
+}
+
+    .social-feed-fb li .media .image img:hover, .social-feed-tw .tweets_media:hover {
+        opacity: 0.8;
+    }
+
+.social-feed-fb .avatar img {
+    border-radius: 3px;
+}
+
+[class*="height-"] .message, [class*="height-"] .story {
+    overflow: hidden !important;
+}
+
+.scroll-content > .social-feed-fb, .scroll-content > .social-feed-tw {
+    height: 100%;
+}
+
+.feeds-loading {
+    width: 26.5px;
+    height: 25px;
+    margin: -12.5px 0 0 -8px;
+    background: url('loader.gif') no-repeat 50% 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999995;
+    border-radius: 50%;
+}
+
+.flexslider .feeds-loading {
+    margin-top: 3px;
+}
+
+.feed-boxed.social-feed-fb > li, .feed-boxed.social-feed-fb .slides > li > .fb-container, .feed-boxed.social-feed-tw li > .tweet-cnt {
+    background: #fff;
+    margin: 1px 1px 12px 1px;
+    padding: 30px 20px 30px 100px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.feed-boxed.social-feed-tw li > .tweet-cnt {
+    padding-left: 20px;
+}
+
+.feed-boxed.social-feed-fb > li > .meta-header .avatar, .feed-boxed.social-feed-fb .slides > li > .fb-container > .meta-header .avatar {
+    top: 36px;
+    left: 30px;
+}
+
+.feed-dark, .feed-dark span, .feed-dark p, .feed-dark a {
+    color: #fff;
+}
+
+    .feed-dark.social-feed-fb > li .message, .feed-dark.social-feed-fb .slides > li .message, .feed-dark.social-feed-fb li .story {
+        color: #d8d8d8;
+    }
+
+    .feed-dark.feed-boxed.social-feed-fb > li, .feed-dark.feed-boxed.social-feed-fb .slides > li .fb-container, .feed-dark.feed-boxed.social-feed-tw li > .tweet-cnt {
+        background-color: #444;
+    }
+
+.feed-boxed.social-feed-fb .slides > li > .fb-container {
+    margin-bottom: 2px;
+}
+
+.feed-boxed.social-feed-fb .slides > li {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+}
+
+.scroll-content {
+    padding-right: 25px;
+}
+
+@media (max-width:994px) {
+    .feed-boxed.social-feed-fb > li, .feed-boxed.social-feed-fb .slides > li > .fb-container {
+        padding: 30px 20px 30px 60px;
+    }
+
+        .feed-boxed.social-feed-fb > li > .meta-header .avatar, .feed-boxed.social-feed-fb .slides > li > .fb-container > .meta-header .avatar {
+            left: 20px;
+        }
+}
+
+
+.social-feed-fb li .meta-footer {
+
+
+.fa-twitter:before {
+    font-size: 27px;
+}
+
+
+
+.social-logo {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+} 
+
+.social-logo 
+
+
+	.fa-facebook-f:before, 
+	.fa-facebook:before,
+	.fa-twitter-f:before, 
+	.fa-twitter:before {
+    font-size: 27px;
+    top: 3px;
+    position: relative;
+}
+
+
+
+	time,
+	span[class="seperator"],
+	span[class="likes"],
+	span[class="shares"],
+	span[class="comments"],
+	span[class="comment"],
+	span[class="share"] {
+		display: none
+	}
+
+} 
+
+.social-feed-fb li {
+	position:relative;
+	padding-bottom: 70px;
+	border:1px solid transparent;
+
+		position: relative;
+		min-height: 400px;
+		padding: 10px 0;
+		margin: 5px;
+
+
+
+   		@media (min-width:0) {
+   			width:100%;
+   			float:left;
+   			min-height:0;
+   			padding-bottom: 70px;
+   		 p {
+   		 		font-size:1.1rem;
+   		 		line-height:1.5
+   		 }
+   		}
+
+		@media (min-width:530px) {
+		width:48%;
+		min-height: 400px;
+
+			p {
+			font-size:1.1rem;
+			line-height:1.4;
+			}
+		}
+
+		@media (min-width:992px) {
+			
+			width: 23%;
+	
+		}
+
+
+
+
+
+}
+.social-feed-fb li  .meta-footer {
+	position:absolute;
+	width:100%;
+	bottom:0;
+	left:0;
+	background:#3c5a96;
+	color:#fff;
+    padding: 14px 10px 12px 20px;
+}
+
+.social-feed-fb span.like a {
+
+background: #4965b8;
+    display: inline-block;
+    padding: 10px;
+    background: url(css/images/icons/thumb-up.svg) top 7px left 0 no-repeat;
+    background-size: 23px;
+    padding-left: 32px;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+
+#image-banner #mainpageheader {
+    color: #fff;
+    height: auto;
+    max-height: 560px;
+    bottom: 10px;
+    z-index: 10000;
+    width: 100%;
+    margin: -300px auto 0 auto;
+    padding-bottom: 300px;
+}
+
+#overall-wrapper, 
+#aigwd-logobanner, 
+.shadow, 
+#aigwd-footerWidgets {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+
+.yesp .yesp-controls {
+	z-index:9;
+}
+
+

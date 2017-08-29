@@ -1,3 +1,159 @@
+.icon-widget__sm.tleft {
+
+	img {
+		margin: 20px 0
+	}
+}
+
+
+
+
+
+@media (max-width: 550px) {
+	.tapestry-qlinks.quicklinks .col-xs-6 {
+	width:50%;
+	margin-bottom: 0;
+	}
+
+}
+
+.tapestry-qlinks  {
+a.careers {
+
+padding: 240px 0 115px;
+font-size:1.1rem;
+	&:before {
+	background: url(../css/images/icons/about/icon-1.svg) top center no-repeat;
+
+    width: 140px;
+    height: 140px;
+       top: 79px;
+    left: 37%;
+
+	}
+}
+
+
+
+
+
+a.culture {
+	&:before {
+	background: url(../css/images/icons/about/icon-2.svg) top center no-repeat;
+	}
+}
+
+
+a.people {
+	&:before {
+	background: url(../css/images/icons/about/icon-3.svg) top center no-repeat;
+	}
+}
+
+
+
+a.human-resources {
+	&:before {
+	background: url(../css/images/icons/about/icon-4.svg) top center no-repeat;
+	}
+}
+
+
+
+
+a.our-history {
+	&:before {
+	background: url(../css/images/icons/about/icon-5.svg) top center no-repeat;
+	}
+}
+
+
+
+
+
+
+
+	a  {
+
+		position: relative;
+		transition: background-color .5s;
+		display: block;
+
+		&:before {
+		content: '';
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		top: 35px;
+	
+		left: 33%;
+		}
+
+
+
+			&:hover {
+				background-color: $primary-color;
+				cursor: pointer;
+				color:#fff;
+			}
+		}
+
+
+	
+
+	.icon-widget {
+
+			position: relative;
+			    text-transform: uppercase;
+    font-weight: bold;
+    color: #111;
+	}
+
+	.icon-widget__lg {
+	margin-bottom:0;
+	display: block;
+
+	img {
+	width: 45%;
+	height: auto;
+
+		@media (max-width:767px) {
+		width: 120px;
+		height: auto;
+		}
+	} 
+
+	@media (max-width:767px) {
+	margin-bottom:30px; 
+	}
+
+
+	} 
+
+	.icon-widget__sm {
+
+	
+    transition: background-color .5s;
+    display: block;
+    padding-top: 127px;
+
+
+
+
+	display: block;
+
+	> img {
+	height: 70px;
+	}  
+
+
+	}
+
+
+
+}
+
+
 
 	
 .quicklinks {
@@ -12,25 +168,17 @@
 }
 
 
-.about-qlinks {
 
-	.icon-widget__lg {
-
-	img {
-	width: 45%;
-	height: auto;
-	} 
-	
-
-} 
-
-
-}
 
 
 .icon-widget {
 
-	
+	h4 {
+
+		font-size: 1.1rem;
+		margin-top: 20px;
+	}
+
 	border-radius:5px;
 	
 	&__light-grey {
@@ -42,8 +190,12 @@
 
 	&__yellow {
 	background-color:#fcf5da; 
-	padding: 40px 20px;
+	padding: 30px 20px;
 	margin-bottom:20px;
+
+		> img {
+		height: 70px;
+		}
 	}
  
 
@@ -83,7 +235,11 @@
 		@extend .md-font;
 		border-radius:5px;
 		width: 100%;
-		padding: 60px;
+		padding: 75px;
+
+		@media (max-width:1150px) and (min-width:992px) {
+			    padding: 96px 75px;
+		}
 
 		@media (max-width:767px) {
 		padding:30px;
@@ -107,11 +263,11 @@
 	} 
 
 	img {
-		width: auto;
-		height:50px;
+		width:50px;
+		height:auto;
 		margin: 0 auto;
 		display: block;
-		min-width:100px;
+		
 		}
 
 		img[alt="Refer a Friend"] {
@@ -149,11 +305,12 @@
 		}
 		
 	}
-
+ 
 
 	&__image {
 			padding: 0;
-			background-color:#fafafa;
+			background-color:transparent;
+			border:1px solid #ccc;
 			  
 			
 			 img {
@@ -163,7 +320,7 @@
 			
 
 			.space-text {
-			padding: 10px 30px 30px;
+			padding: 10px 15px 30px;
 			}
 	}
 

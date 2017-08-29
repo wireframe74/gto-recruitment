@@ -12,6 +12,11 @@
         @media (min-width:768px) and (max-width:991px) {
               font-size: 6rem;
         }
+
+         @media (min-width:200px) and (max-width:400px) {
+              font-size: 5.5rem;
+        }
+
     }
 }
 
@@ -29,9 +34,9 @@
 
 
         &--text {
-        @extend .heading-font;
-            font-size: 1rem;
-    color: #696f77;
+     
+            font-size: 1.1rem;
+ 
         line-height:1.6rem;
         }
 

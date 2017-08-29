@@ -49,11 +49,11 @@ position: fixed;
 	}
 
 		.menu-item.home a {
-		background: url(../images/icons/home-dark.svg) top left no-repeat;
+		background: url(css/images/icons/home-dark.svg) top left no-repeat;
 		}
 
 		#menu-main-menu li.menu-item.home a {
-		background: url(../images/icons/home-dark.svg) top left no-repeat;
+		background: url(css/images/icons/home-dark.svg) top left no-repeat;
 		}
 
 
@@ -81,7 +81,7 @@ position: fixed;
 
 
 .aig-logo--white {
-    background-image: url(../images/logo-full.svg);
+    background-image: url(css/images/logo-full.svg);
 }
 
 
@@ -95,11 +95,11 @@ position: fixed;
 	.header-icon {
 
 		&__search a{
-		background: url(../images/icons/search-dark.svg) top left no-repeat;
+		background: url(css/images/icons/search-dark.svg) top left no-repeat;
 		}
 
 		&__facebook a{
-		background: url(../images/icons/facebook-app-logo-dark.svg) top left no-repeat;
+		background: url(css/images/icons/facebook-app-logo-dark.svg) top left no-repeat;
 		}
 
 	}
@@ -117,7 +117,7 @@ position: fixed;
 
 	background:$primary-color;
 	.aig-logo {
-	background: transparent url(../images/logo.svg) center center no-repeat;
+	background: transparent url(css/images/logo.svg) center center no-repeat;
 	}
 
 
@@ -136,11 +136,11 @@ position: fixed;
 	.header-icon {
 
 		&__search > a{
-		background: url(../images/icons/search.svg) top left no-repeat;
+		background: url(css/images/icons/search.svg) top left no-repeat;
 		}
 
 		&__facebook >  a{
-		background: url(../images/icons/facebook-app-logo.svg) top left no-repeat;
+		background: url(css/images/icons/facebook-app-logo.svg) top left no-repeat;
 		}
 
 	}
@@ -159,7 +159,7 @@ position: fixed;
 
 
 	#menu-main-menu-1 li.menu-item.home > a {
-		background: url(../images/icons/home.svg) top left no-repeat;
+		background: url(css/images/icons/home.svg) top left no-repeat;
 	}
 
 

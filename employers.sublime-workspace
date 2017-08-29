@@ -1,0 +1,1177 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"remove",
+				"removeAttr"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"fade",
+				"fadeIn"
+			],
+			[
+				"off",
+				"offset"
+			],
+			[
+				"menu",
+				"menu-button"
+			],
+			[
+				"show",
+				"show-menu"
+			],
+			[
+				"body",
+				"body-copy"
+			],
+			[
+				"bac",
+				"background-attachment"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"footer",
+				"footer-links"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"primary",
+				"primary-color"
+			],
+			[
+				"dis",
+				"display-flex"
+			],
+			[
+				"trN",
+				"transform-origin"
+			],
+			[
+				"prima",
+				"primary-color"
+			],
+			[
+				"bod",
+				"body-copy"
+			],
+			[
+				"rewind",
+				"rewind_posts"
+			],
+			[
+				"sec",
+				"secondary-color"
+			],
+			[
+				"pri",
+				"primary-color"
+			],
+			[
+				"primar",
+				"primary-font"
+			],
+			[
+				"edit_pos",
+				"edit_post_link"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "packagae",
+		"selected_items":
+		[
+			[
+				"packagae",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"git push",
+				"Git: Push Tags"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git p",
+				"Git: Push"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git remote",
+				"Git: Track Remote Branch"
+			],
+			[
+				"gita",
+				"Git: Add..."
+			],
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"lp",
+				"Package Control: List Packages"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"br",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 600.0
+	},
+	"console":
+	{
+		"height": 226.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/jobslider.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/gulpfile-bak.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-employers-policies.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-employers.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/functions.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-config.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/css/styles.css",
+		"/C/Users/Chris/Dropbox/CHRIS_WORK/AI_GROUP/Apprentice_Site/WP_ORIGINAL/wp]/wp-content/themes/aigwd/single-employers.php",
+		"/C/Users/Chris/Dropbox/CHRIS_WORK/AI_GROUP/Apprentice_Site/apprentices_wp.zip",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/stats-employers.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/gulp-browser-sync/js/main.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/gulpfile.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/package.json",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/package.json",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/gulp-browser-sync/sass/_forms.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/gulpfile.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/gulp-browser-sync/sass/_icon_widgets.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sidebar-employers.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/gulp-browser-sync/candidates.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/gulp-browser-sync/sass/_search.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/_base.scss",
+		"/C/Users/Chris/AppData/Local/Temp/Temp1_GulPress-master.zip/GulPress-master/gulpfile.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_fonts-content-area.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/_layout.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_banner.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_footer.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/js/main.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/js/plugins.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/boxouts.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/templates/home-page.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/_modules.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/gulp-browser-sync/gulpfile.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/sftp-config.json",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/Youtube-TV-master/src/ytv.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-apprentices.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/header.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_main-navigation.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/page-header.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_buttons.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_carousel.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/footer.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/templates/jobs-search.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_mobile-menu.scss",
+		"/C/Users/Chris/Desktop/video/index.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/jobslider-full-width.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_forms.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_icon_widgets.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/findajob.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/search.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/_variables.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/internal.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-admin/css/colors/_variables.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/aawep-chargebee/wp-content/themes/aawep/templates/home.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/.htaccess",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-aboutus.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/js/video-header.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/faqs.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-testimonials.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-publications.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-news-items.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/templates/about-us.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/jump.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/jumpmenu.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/casestudies.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/templates/contactpagetemplate-aigwd.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/js/script.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-includes/SimplePie/Cache/Base.php",
+		"/C/Users/Chris/Downloads/download (22)",
+		"/C/Users/Chris/Downloads/functions (3).php",
+		"/C/Users/Chris/Downloads/download (17)",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-employers-productivitycentre-main.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-employers-helpyourbusiness.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-case-studies.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-apprenticesfaqs.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/single-apprentices-policies.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/old_theme_Files/statemanagement.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_sidebar.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/index.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/statemanagement.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/html/js/plugins.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/_state.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/page-furniture/stats-testimonials.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_search.scss",
+		"/C/Users/Chris/Desktop/TinyNav.js-master/tinynav.min.js",
+		"/C/Users/Chris/Desktop/numscroller-gh-pages/numscroller-1.0.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/html/sass/modules/_search.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/forms/form-1.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-1.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/twentyseventeen/footer.php",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_hero.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/thankyou-page.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/forms/form-4.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/forms/form-3.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/forms/form-2.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/forms/form-1.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/out/custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/forms/custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/custom.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-2.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-3.html",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-4.html",
+		"/C/Users/Chris/Desktop/gulp/gulpfile.js",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/css/accordian.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/css/bootstrap.min.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-1_files/custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-1_files/jquery-ui-1.8.17.custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-2_files/custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-2_files/jquery-ui-1.8.17.custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-3_files/custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-3_files/jquery-ui-1.8.17.custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-4_files/custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/form-4_files/jquery-ui-1.8.17.custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/thankyou-page_files/custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/forms/thankyou-page_files/jquery-ui-1.8.17.custom.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/html/css/bootstrap.min.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/html/css/styles.css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/html/sass/_base.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/html/sass/_layout.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/html/sass/modules/_accordion.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/html/sass/modules/_buttons.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/html/sass/modules/_carousel.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/html/sass/modules/_jobs-board.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/html/sass/modules/_mobile-menu.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_accordion.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/sass/modules/_jobs-board.scss",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/style (original).css",
+		"/C/Users/Chris/Dropbox/Apps/wamp/www/apprentice/wp-content/themes/aigwd/templates/1-form.php"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 138.0,
+		"where_history":
+		[
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd\\sass",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd\\sass\\modules",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd\\js",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd\\sass\\modules",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd,-\\node_modules\\",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd\\page-furniture",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd,-*.\"folder_exclude_patterns\": [\"node_modules\"]",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd\\page-furniture",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd\\page-furniture",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\apprentice\\wp-content\\themes\\aigwd",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\ai-group-html\\sass",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\ai-group-html\\src\\sass",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20",
+			"<current file>",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa\\inc\\fees",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20-demo-server\\wp-content\\themes\\wpa\\inc\\form",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\plugins\\chargebee_by_pinta",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa\\inc\\form",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\plugins",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa\\sass",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa\\sass",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa\\sass",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa\\",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa\\sass",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\plugins",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa\\sass",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20",
+			"C:\\Users\\Chris\\Dropbox\\Apps\\wamp\\www\\wpa-chargebee-jun-20\\wp-content\\themes\\wpa",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\sass",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\inc",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\sass",
+			"<current file>",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\sass",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\inc\\fees",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\sass",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\sass",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\templates",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\sass",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\templates",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\sass",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\templates",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\sass",
+			"<current file>",
+			"C:\\wamp\\www\\arabian-emirates-wp\\wp-content\\themes\\arabian-emirates\\sass",
+			"C:\\wamp\\www\\angc-nov\\wp-content\\themes\\angc-parramatta",
+			"C:\\wamp\\www\\angc-nov\\wp-content\\themes\\angc-parramatta\\",
+			"C:\\wamp\\www\\angc-nov\\wp-content\\themes\\angc-parramatta",
+			"C:\\wamp\\www\\angc-nov\\wp-content\\themes\\angc-parramatta\\css\\custom",
+			"C:\\wamp\\www\\caribbean\\wp-content\\themes",
+			"C:\\wamp\\www\\cityofparramatta\\wp-content\\themes\\angc-parramatta",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"scroll",
+			"header",
+			"is_mobile",
+			"2",
+			"jobs",
+			"col-xs-12",
+			".border-bottom",
+			" 'header-17.jpg'",
+			"h3",
+			"mega",
+			"AI Group Recruitment Services - Building Tomorrow's Workforce",
+			"<?php bloginfo('url'); ?>/apply/",
+			"wow fadeInUp\"",
+			"subsc",
+			"btn",
+			"assets/",
+			" echo'",
+			"';",
+			" echo '",
+			"cho '",
+			"class=\"postCollapse findajob\"",
+			"col-xs-12",
+			"responsive",
+			"btn aig-btn aig-btn-sml",
+			"col-sm-3",
+			"enterbutton",
+			"enterbutton\">ENTER</div></a>\n\t\t</div>",
+			"2",
+			"div class=\"icon-widget icon-widget__sm icon-widget__light-grey widget\"",
+			"  <a class=\"aig-btn aig-btn__small\"  href=\"<?php bloginfo('url'); ?>/employers/employers/\" role=\"button\">Discover More</a>",
+			"icon-widget__light-grey",
+			" <div class=\"col-xs-6 col-sm-3 ",
+			"icon-widget",
+			"div",
+			"';",
+			"echo'",
+			"\t\techo'",
+			"sass/",
+			"modules/",
+			"section",
+			"animated",
+			"js",
+			"css",
+			"li.li",
+			"12",
+			"sm-4",
+			"job",
+			"2",
+			"apprentice",
+			"The right job helps you create the future you want.",
+			"mobile-o",
+			"height",
+			"fadeInRight",
+			"how it wo",
+			"3",
+			"2",
+			"class=\"form-control\"",
+			"subscribe-f",
+			"#contact-form",
+			"#search",
+			".close-button",
+			"btn ",
+			"class=\"btn btn-default\"",
+			"contact-form",
+			".png",
+			"video",
+			"images/",
+			"jobslider.php",
+			"border-top",
+			"para",
+			"8",
+			"';",
+			"   echo '",
+			"'; ",
+			"   echo '",
+			"id=\"findaspecialist\"",
+			"FIND A JOB",
+			"script",
+			"numberR",
+			"Search Results",
+			"title",
+			"$primary-color",
+			".anchor-links--itm",
+			"student_interviews",
+			"video",
+			"4",
+			"margin",
+			"topmargin",
+			"margin",
+			"animated",
+			"family=PT+Sans+Narrow:400,700",
+			"stell",
+			"MyExtendedMenuWalker()",
+			"walker",
+			"header",
+			"$bg",
+			"class=\"postCollapse employers\"",
+			"2",
+			"\\b\\r",
+			"enterbutton",
+			"id=\"rightcolumn\" class=\"col-xs-12 col-md-6\"",
+			"content",
+			"_",
+			" $",
+			"min-",
+			"  <!-- ",
+			"poli",
+			"policy",
+			"'/page-furniture/jobslider.php');",
+			"$(\".scroll\").click(function(event)",
+			".anchor",
+			"margin",
+			"col-sm-3",
+			"<li>",
+			"id=\"jump\"",
+			"$('#contact-form > form li\"],#contact-form > button')",
+			".svg",
+			"<h3 class=\"officename\"><?php  the_title(); ?></h3>",
+			"#contact-form > form > input[type=\"search\"], #searchsubmit",
+			"fadeInUp",
+			"fadeInRight",
+			"0.7",
+			"5",
+			"Right",
+			"search",
+			"this",
+			"$('#search')",
+			"'#search'"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"15px",
+			"class=\"postCollapse col-xs-12 col-md-6\"",
+			"class=\"internalcolumn col-xs-12 col-md-3\"",
+			"<div id=\"aigwd-maincontentcontainer\" class=\"row\"",
+			"zoe@weddingplanningacademy.co.uk",
+			"monthly-10mths",
+			"monthly-9mths",
+			"&times;",
+			"@include display-flex();\n-js-display: flex",
+			"<div class=\"rel-wrap\"><div class=\"form-elem\">",
+			"</div>\n  </div>  </div>",
+			"<div class=\"form-elem\"><div class=\"rel-wrap\">",
+			"$light-beige",
+			"enrol",
+			"border-radius:3px;",
+			"text-decoration:none;",
+			"",
+			"display:inline-block;",
+			"10439",
+			"10404",
+			"<?php bloginfo('template_directory'); ?>/assets/landing-page-assets"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Makefile/Make.sublime-build",
+	"project": "employers.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"main.js",
+				"wp-content\\themes\\aigwd\\js\\main.js"
+			],
+			[
+				"_lay",
+				"wp-content\\themes\\aigwd\\sass\\_layout.scss"
+			],
+			[
+				"_header",
+				"wp-content\\themes\\aigwd\\sass\\_header.scss"
+			],
+			[
+				"base",
+				"wp-content\\themes\\aigwd\\sass\\_base.scss"
+			],
+			[
+				"home",
+				"wp-content\\themes\\aigwd\\templates\\home-page.php"
+			],
+			[
+				"layout",
+				"wp-content\\themes\\aigwd\\sass\\_layout.scss"
+			],
+			[
+				"wp-conf",
+				"wp-config.php"
+			],
+			[
+				"functions.php",
+				"wp-content\\themes\\aigwd\\functions.php"
+			],
+			[
+				"functions",
+				"wp-content\\themes\\aigwd\\functions.php"
+			],
+			[
+				"homepa",
+				"wp-content\\themes\\aigwd\\templates\\home-page.php"
+			],
+			[
+				"sidebar-e",
+				"wp-content\\themes\\aigwd\\sidebar-employers.php"
+			],
+			[
+				"footer",
+				"wp-content\\themes\\aigwd\\footer.php"
+			],
+			[
+				"pahge-he",
+				"wp-content\\themes\\aigwd\\page-furniture\\page-header.php"
+			],
+			[
+				"page-he",
+				"wp-content\\themes\\aigwd\\page-furniture\\page-header.php"
+			],
+			[
+				"butt",
+				"wp-content\\themes\\aigwd\\sass\\_buttons.scss"
+			],
+			[
+				"page-hea",
+				"wp-content\\themes\\aigwd\\page-furniture\\page-header.php"
+			],
+			[
+				"stats",
+				"wp-content\\themes\\aigwd\\page-furniture\\stats.php"
+			],
+			[
+				"packa",
+				"wp-content\\themes\\aigwd\\package.json"
+			],
+			[
+				"side",
+				"wp-content\\themes\\aigwd\\sidebar-apprentices.php"
+			],
+			[
+				"_base",
+				"wp-content\\themes\\aigwd\\sass\\_base.scss"
+			],
+			[
+				"productivitycentre-boxouts",
+				"wp-content\\themes\\aigwd\\page-furniture\\productivitycentre-boxouts-right.php"
+			],
+			[
+				"boxouts",
+				"wp-content\\themes\\aigwd\\page-furniture\\boxouts.php"
+			],
+			[
+				"boxo",
+				"wp-content\\themes\\aigwd\\page-furniture\\boxouts.php"
+			],
+			[
+				"home-p",
+				"wp-content\\themes\\aigwd\\templates\\home-page.php"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"single",
+				"wp-content\\themes\\aigwd\\single-apprentices.php"
+			],
+			[
+				"plugins",
+				"wp-content\\themes\\aigwd\\js\\plugins.js"
+			],
+			[
+				"footer.scss",
+				"wp-content\\themes\\aigwd\\sass\\modules\\_footer.scss"
+			],
+			[
+				"js",
+				"wp-content\\themes\\aigwd\\templates\\jobs-search.php"
+			],
+			[
+				"header",
+				"wp-content\\themes\\aigwd\\header.php"
+			],
+			[
+				"page-header",
+				"wp-content\\themes\\aigwd\\page-furniture\\page-header.php"
+			],
+			[
+				"single-a",
+				"wp-content\\themes\\aigwd\\single-apprentices.php"
+			],
+			[
+				"variables",
+				"wp-content\\themes\\aigwd\\sass\\_variables.scss"
+			],
+			[
+				"plugins.js",
+				"wp-content\\themes\\aigwd\\js\\plugins.js"
+			],
+			[
+				"_butt",
+				"wp-content\\themes\\aigwd\\sass\\modules\\_buttons.scss"
+			],
+			[
+				"_buttons",
+				"wp-content\\themes\\aigwd\\sass\\modules\\_buttons.scss"
+			],
+			[
+				"_layou",
+				"wp-content\\themes\\aigwd\\sass\\_layout.scss"
+			],
+			[
+				"jobs",
+				"wp-content\\themes\\aigwd\\page-furniture\\jobslider.php"
+			],
+			[
+				"main",
+				"wp-content\\themes\\aigwd\\js\\main.js"
+			],
+			[
+				"",
+				"wp-content\\themes\\aigwd\\footer.php"
+			],
+			[
+				"page-head",
+				"wp-content\\themes\\aigwd\\page-furniture\\page-header.php"
+			],
+			[
+				"base.scss",
+				"wp-content\\themes\\aigwd\\sass\\_base.scss"
+			],
+			[
+				"boxout",
+				"wp-content\\themes\\aigwd\\page-furniture\\boxouts.php"
+			],
+			[
+				"page-",
+				"wp-content\\themes\\aigwd\\page-furniture\\page-header.php"
+			],
+			[
+				"lay",
+				"wp-content\\themes\\aigwd\\sass\\_layout.scss"
+			],
+			[
+				"header.php",
+				"wp-content\\themes\\aigwd\\header.php"
+			],
+			[
+				"_state",
+				"wp-content\\themes\\aigwd\\sass\\_state.scss"
+			],
+			[
+				"function",
+				"wp-content\\themes\\aigwd\\functions.php"
+			],
+			[
+				"_search",
+				"wp-content\\themes\\aigwd\\sass\\modules\\_search.scss"
+			],
+			[
+				"_stat",
+				"wp-content\\themes\\aigwd\\sass\\_state.scss"
+			],
+			[
+				"_se",
+				"wp-content\\themes\\aigwd\\sass\\modules\\_search.scss"
+			],
+			[
+				"search.scss",
+				"wp-content\\themes\\aigwd\\sass\\modules\\_search.scss"
+			],
+			[
+				"funcitons.php",
+				"wp-content\\themes\\aigwd\\functions.php"
+			],
+			[
+				"_footer",
+				"wp-content\\themes\\aigwd\\sass\\modules\\_footer.scss"
+			],
+			[
+				"footer.php",
+				"wp-content\\themes\\aigwd\\footer.php"
+			],
+			[
+				"functions.",
+				"wp-content\\themes\\aigwd\\functions.php"
+			],
+			[
+				"header.p",
+				"wp-content\\themes\\aigwd\\header.php"
+			],
+			[
+				"homepage",
+				"wp-content\\themes\\aigwd\\templates\\home-page.php"
+			],
+			[
+				"page",
+				"wp-content\\themes\\aigwd\\page-furniture\\page-header.php"
+			],
+			[
+				"job",
+				"wp-content\\themes\\aigwd\\page-furniture\\jobsliderhome.php"
+			],
+			[
+				"box",
+				"wp-content\\themes\\aigwd\\page-furniture\\boxouts.php"
+			],
+			[
+				"footer.",
+				"wp-content\\themes\\aigwd\\footer.php"
+			],
+			[
+				"lugins",
+				"wp-content\\themes\\aigwd\\js\\plugins.js"
+			],
+			[
+				"funcitons",
+				"wp-content\\themes\\aigwd\\functions.php"
+			],
+			[
+				"functions.p",
+				"wp-content\\themes\\aigwd\\functions.php"
+			],
+			[
+				"inte",
+				"wp-content\\themes\\aigwd\\internal.html"
+			],
+			[
+				"index.html",
+				"wp-content\\themes\\aigwd\\html\\index.html"
+			],
+			[
+				"index.ht",
+				"wp-content\\themes\\aigwd\\html\\index.html"
+			],
+			[
+				"mainc",
+				"wp-content\\themes\\aigwd\\page-furniture\\maincontent.php"
+			],
+			[
+				"interna",
+				"wp-content\\themes\\aigwd\\html\\internal.html"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"base.s",
+				"sass\\_base.scss"
+			],
+			[
+				"_foo",
+				"src\\sass\\_footer.scss"
+			],
+			[
+				"variab",
+				"src\\sass\\_variables.scss"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"about.php",
+				"wp-content\\themes\\wpa\\templates\\about.php"
+			],
+			[
+				"about",
+				"wp-admin\\about.php"
+			],
+			[
+				"home.",
+				"wp-content\\themes\\wpa\\templates\\home.php"
+			],
+			[
+				"connect",
+				"wp-content\\themes\\wpa\\templates\\connect.php"
+			],
+			[
+				"_modules",
+				"wp-content\\themes\\wpa\\sass\\_modules.scss"
+			],
+			[
+				"functions.js",
+				"wp-content\\themes\\wpa\\js\\functions.js"
+			],
+			[
+				"modules",
+				"wp-content\\themes\\wpa\\sass\\_modules.scss"
+			],
+			[
+				"inspir",
+				"wp-content\\themes\\wpa\\templates\\inspire.php"
+			],
+			[
+				"inspire",
+				"wp-content\\themes\\wpa\\templates\\inspire.php"
+			],
+			[
+				"fees.php",
+				"wp-content\\themes\\wpa\\templates\\fees.php"
+			],
+			[
+				"fees",
+				"cache\\zencache\\cache\\https\\www-arabianweddingacademy-com\\fees.html"
+			],
+			[
+				"func",
+				"wp-content\\themes\\wpa\\js\\functions.js"
+			],
+			[
+				"functio",
+				"wp-content\\themes\\wpa\\functions.php"
+			],
+			[
+				"course-single",
+				"wp-content\\themes\\wpa\\templates\\course-single.php"
+			],
+			[
+				"w",
+				"wp-config.php"
+			],
+			[
+				"learn",
+				"wp-content\\themes\\wpa\\templates\\learn.php"
+			],
+			[
+				"sftp",
+				"sftp-config.json"
+			],
+			[
+				"functions.j",
+				"wp-content\\themes\\wpa\\js\\functions.js"
+			],
+			[
+				"_wooco",
+				"wp-content\\themes\\arabian-emirates\\sass\\_woocommerce.scss"
+			],
+			[
+				"config",
+				"wp-content\\themes\\arabian-emirates\\config.rb"
+			],
+			[
+				"config.rb",
+				"wp-content\\themes\\arabian-emirates\\config.rb"
+			],
+			[
+				"funcions",
+				"wp-content\\themes\\arabian-emirates\\functions.php"
+			],
+			[
+				"_m",
+				"wp-content\\themes\\arabian-emirates\\sass\\_modules.scss"
+			],
+			[
+				"fnctions",
+				"wp-content\\themes\\arabian-emirates\\functions.php"
+			],
+			[
+				"functons.js",
+				"wp-content\\themes\\arabian-emirates\\js\\functions.js"
+			],
+			[
+				"_ab",
+				"wp-content\\themes\\arabian-emirates\\sass\\_about.scss"
+			],
+			[
+				"_glo",
+				"wp-content\\themes\\arabian-emirates\\sass\\_globals.scss"
+			],
+			[
+				"forms.sc",
+				"wp-content\\themes\\arabian-emirates\\sass\\_forms.scss"
+			],
+			[
+				"_mod",
+				"wp-content\\themes\\arabian-emirates\\sass\\_modules.scss"
+			],
+			[
+				"_gl",
+				"wp-content\\themes\\arabian-emirates\\sass\\_globals.scss"
+			],
+			[
+				"_globa",
+				"wp-content\\themes\\arabian-emirates\\sass\\_globals.scss"
+			],
+			[
+				"head",
+				"wp-includes\\theme-compat\\header.php"
+			],
+			[
+				"funct",
+				"functions.php"
+			],
+			[
+				"lear",
+				"templates\\learn.php"
+			],
+			[
+				"globa",
+				"sass\\_globals.scss"
+			],
+			[
+				"cours",
+				"templates\\course-single.php"
+			],
+			[
+				"_menu",
+				"sass\\_menu.scss"
+			],
+			[
+				"course-s",
+				"templates\\course-single.php"
+			],
+			[
+				"gitig",
+				".gitignore"
+			],
+			[
+				"_ac",
+				"sass\\_academy-tv.scss"
+			],
+			[
+				"heder",
+				"header.php"
+			],
+			[
+				"full",
+				"wp-content\\themes\\arabian-emirates\\templates\\full-width.php"
+			],
+			[
+				"fonts",
+				"wp-content\\themes\\arabian-emirates\\sass\\_fonts.scss"
+			],
+			[
+				"loop",
+				"wp-content\\themes\\angc-parramatta\\loop.php"
+			],
+			[
+				"wp-con",
+				"wp-config.php"
+			],
+			[
+				"_cust",
+				"wp-content\\themes\\caribbean\\assets\\css\\_customise.scss"
+			],
+			[
+				"_cus",
+				"wp-content\\themes\\caribbean\\assets\\css\\_customise.scss"
+			],
+			[
+				"cous",
+				"wp-content\\themes\\caribbean\\templates\\courses-single.php"
+			],
+			[
+				"_yuc",
+				"wp-content\\themes\\caribbean\\assets\\css\\_yuck.scss"
+			],
+			[
+				"front",
+				"wp-content\\themes\\prosolutions\\front-page.php"
+			],
+			[
+				"leaf",
+				"wp-content\\themes\\prosolutions\\leaf.php"
+			],
+			[
+				"fucntions",
+				"wp-content\\themes\\prosolutions\\functions.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 750.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 570.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 427.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

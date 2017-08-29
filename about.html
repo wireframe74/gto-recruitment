@@ -1,19 +1,15 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title></title>
+<title>AI Group</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<!-- Place favicon.ico in the root directory -->
-
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300,400" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 
 <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -21,77 +17,133 @@
 
 
 
+<!-- VIDEO FILES -->
+
+  <link rel="stylesheet" type="text/css" media="screen" href="youtube-video-player/packages/icons/css/icons.min.css" />
+   
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" type="text/css" media="screen" href="youtube-video-player/css/youtube-video-player.min.css" />
+   
+
+   
+   
+  <!-- Perfect Scrollbar -->
+  <link rel="stylesheet" type="text/css" media="screen" href="youtube-video-player/packages/perfect-scrollbar/perfect-scrollbar.css" />
+
+
+
 
 
 </head>
+
+
+
 <body>
-  <div id="o-wrapper" class="o-wrapper">
+<div id="o-wrapper" class="o-wrapper">
 <div id="preloader"></div>
 
 
-
-
-<header class="aig-header sticky-aig-header scrolling clearfix " id="aig-header" role="banner">
-
-<div class="container menu-global">
-
-<div class="aig-logo-wrapper">
-<a class="aig-logo aig-logo--white" href="#">AI Group</a>
-</div> 
-
-<div class="menu-button"><i class="fa fa-bars"></i></div>
-
-
-
 <div class="responsive-menu">
-<div class="menu-button">×</div>
-<nav class="mobile-menu">
-<ul class="nav navbar-nav">
 
-<li class="home menu-item">
-<a href="/"><img src="/apprentice/wp-content/uploads/home-icon-15.png" alt="Home"></a>
-</li>
-<li class="menu-item"><a href="#">Current Vacancies</a></li>
-<li class="menu-item"><a href="#">Sign In</a></li>
-<li class="menu-item"><a href="#">Policies</a></li>
-<li class="menu-item"><a href="#">Contact</a></li>
-</ul>
-</nav>
+    <div class="menu-button">×</div>
+
+    <nav class="mobile-menu">
+
+    <ul id="menu-main-menu" class="sm sm-blue">
+
+          <li class="home menu-item"><a href="/"></a></li>
+
+          <li class="main menu-item menu-item-has-children"><a href="candidates.html">Candidates</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Our Unique Approach</a></li>
+                  <li><a href="#">Find a Job</a></li>
+                  <li><a href="#">Create a Profile</a></li>
+                </ul>
+          </li>
+
+          <li class="main menu-item menu-item-has-children"><a href="employers.html">Employers</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Solving Your Problem</a></li>
+                  <li><a href="#">Our Service &amp; Fees</a></li>
+                  <li><a href="#">Calculate your rate</a></li>
+                  <li><a href="#">Make an enquiry</a></li>
+                  <li><a href="#">Book a consultation</a></li>
+                </ul>
+          </li>
+
+          <li class="main menu-item menu-item-has-children"><a href="resources.html">Resources</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Great Articles &amp; Videos</a></li>
+                  <li><a href="#">Useful Candidate Templates &amp; Tools</a></li>
+                  <li><a href="#">Useful Employer Templates &amp; Tools</a></li>
+                  <li><a href="#">Govt Policy &amp; Reports</a></li>
+                </ul>
+          </li>
+
+          <li class="main menu-item menu-item-has-children"><a href="about.html">About</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Culture</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Our History</a></li>
+                </ul>
+          </li>
+
+          <li class="main menu-item mobile-only"><a href="contact.html">Contact</a>
+
+    </ul>
+    </nav>
 </div>
+ <!-- END RESPONSIVE MENU -->
 
 
 
-<div class="header-buttons" id="header-buttons">
-  <li class="header-icon header-icon__search"><a href="#search"></a></li>
-<a class="aig-btn aig-btn--small aig-btn--outline-white mpp-btn"  href="#" id="ul-btn" role="button">Log In</a>
-<a class="aig-btn aig-btn--small aig-btn--white mpp-btn"  href="#" id="signup-button" role="button">Sign Up</a>
 
-<!-- <ul class="navbar nav">
-  <li class="header-icon header-icon__search"><a href="#search"></a></li>
-</ul> -->
-                 
-</div><!-- header-buttons -->
-</div><!-- container -->
+<!-- HEADER -->
 
-          <!-- NEGATIVE MARGINS  MAIN NAV -->
-        <nav class="main-menu" id="main-menu" role="navigation">
+<header class="aig-header sticky-aig-header scrolling clearfix " id="aig-header">
+
+    <div class="container menu-global">
+
+          <div class="aig-logo-wrapper">
+          <a class="aig-logo aig-logo--white" href="#">AI Group</a>
+          </div> 
+
+          <div class="menu-button"><i class="fa fa-bars"></i></div>
+
+          <div class="header-buttons" id="header-buttons">
+          
+          <div class="header-icon header-icon__search"><a href="#search"></a></div>
+
+          <a class="aig-btn aig-btn--small aig-btn--outline-white mpp-btn"  href="#" id="ul-btn" role="button">Log In</a>
+          <a class="aig-btn aig-btn--small aig-btn--white mpp-btn"  href="#" id="signup-button" role="button">Get in Touch</a>
+          </div><!-- header-buttons -->
+
+
+    </div><!-- container -->
+
+      <nav class="main-menu" id="main-menu">
+                
+
+
+
                 <ul class="main-menu-list container" id="menu-main-menu-1">
 
-                           <li class="main home menu-item"><a href="#">Home</a></li>
+                           <li class="main home menu-item"><a href="./">Home</a></li>
                             
 
 
                             <li class="main menu-item menu-item-has-children">
-                              <a href="#" class="main-link" rel="menuitem">Candidates</a>
+                              <a href="candidates.html" class="main-link">Candidates</a>
                              
 
                               <div class="megamenu" aria-hidden="true"> 
                                 <div class="container">
                                 <ul class="megamenu--sub-menu sub-menu">
-                           <li class="active"><a href="#">Candidates</a></li>
-                <li><a href="#">Our Unique Approach</a></li>
-                <li><a href="#">Find a Job</a></li>
-                <li><a href="#">Create a Profile</a></li>
+                                      <li class="active"><a href="#">Candidates</a></li>
+                                      <li><a href="#">Our Unique Approach</a></li>
+                                      <li><a href="#">Find a Job</a></li>
+                                      <li><a href="#">Create a Profile</a></li>
                                  </ul>
                                  </div>
                               </div> <!-- end megamenu -->
@@ -103,17 +155,17 @@
 
                            
                             <li class="main menu-item menu-item-has-children">
-                              <a href="#" class="main-link" rel="menuitem">Employers</a>
+                              <a href="employers.html" class="main-link">Employers</a>
                              
 
                               <div class="megamenu" aria-hidden="true"> 
                                 <div class="container">
                                 <ul class="megamenu--sub-menu sub-menu">
-                         <li><a href="#">Solving Your Problem</a></li>
-              <li><a href="#">Our Service &amp; Fees</a></li>
-              <li><a href="#">Calculate your rate</a></li>
-              <li><a href="#">Make an enquiry</a></li>
-              <li><a href="#">Book a consultation</a></li>
+                                    <li><a href="#">Solving Your Problem</a></li>
+                                    <li><a href="#">Our Service &amp; Fees</a></li>
+                                    <li><a href="#">Calculate your rate</a></li>
+                                    <li><a href="#">Make an enquiry</a></li>
+                                    <li><a href="#">Book a consultation</a></li>
                                  </ul>
                                  </div>
                               </div> <!-- end megamenu -->
@@ -123,18 +175,15 @@
 
 
 
-
-
-
-                               <li class="main menu-item menu-item-has-children">
-                              <a href="#" class="main-link" rel="menuitem">Resources</a>
+               <li class="main menu-item menu-item-has-children">
+                              <a href="resources.html" class="main-link">Resources</a>
                                        <div class="megamenu" aria-hidden="true"> 
                                 <div class="container">
                                 <ul class="megamenu--sub-menu sub-menu">
-                                        <li><a href="#">Great Articles &amp; Videos</a></li>
-              <li><a href="#">Useful Candidate Templates &amp; Tools</a></li>
-              <li><a href="#">Useful Employer Templates &amp; Tools</a></li>
-              <li><a href="#">Govt Policy &amp; Reports</a></li>
+                                    <li><a href="#">Great Articles &amp; Videos</a></li>
+                                    <li><a href="#">Useful Candidate Templates &amp; Tools</a></li>
+                                    <li><a href="#">Useful Employer Templates &amp; Tools</a></li>
+                                    <li><a href="#">Govt Policy &amp; Reports</a></li>
                                  </ul>
                                  </div>
                               </div> <!-- end megamenu -->
@@ -142,15 +191,16 @@
 
 
                                  <li class="main menu-item menu-item-has-children">
-                              <a href="#" class="main-link" rel="menuitem">About</a>
+                              <a href="about" class="main-link">About</a>
                                        <div class="megamenu" aria-hidden="true"> 
                                 <div class="container">
                                 <ul class="megamenu--sub-menu sub-menu">
-                                   <li class="active"><a href="#">About Us</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Our History</a></li>
+                              
+                                          <li><a href="#">Careers</a></li>
+                                          <li><a href="#">Culture</a></li>
+                                          <li><a href="#">Our Team</a></li>
+                                          <li><a href="#">Our History</a></li>
+                                           <li><a href="contact.html">Contact</a></li>
                                  </ul>
                                  </div>
                               </div> <!-- end megamenu -->
@@ -158,17 +208,10 @@
 
 
 
-
-
-                            <!-- <li class="main" rel="menuitem"><a href="#">Another link</a></li>
-                            <li class="main" rel="menuitem"><a href="#">Another link</a></li>
-                            <li class="main" rel="menuitem"><a href="#">Another link</a></li> -->
-                          </ul>
-            </nav>
-
-
-
-        </header>
+    </ul>
+    </nav>
+    </header>
+    <!-- END HEADER -->
 
 
 
@@ -177,22 +220,17 @@
 
 
 
-
-
-
   <section class="hero-container home__hero">
         <div class="hero hero-video parallax--bg dark-bg">
           <div class="container hero__container">
             <div class="row hero__row">
               <div class="col-lg-6 col-md-6 col-sm-12 center">
-                <h1 class="aig-heading hero--headline animated fadeInUp">The right job helps you create the future you want.</h1>
+                <h1 class="aig-heading hero--headline first" style="visibility: hidden;">The right job helps you create the future you want.</h1>
                
                   <p style="visibility: hidden;" class="hero--paragraph animated second fadeInUp">AI Group Recruitment Services - Building Tomorrow's Workforce</p>
        
                 
                   <div class="clearfix"></div>
-
-
 
 <a style="visibility: hidden;" class="aig-btn aig-btn__reversed hero--btn animated third fadeInUp"  href="#" role="button" data-toggle="modal" data-direction="top-left" data-target=".bs-example-modal-lg">Subscribe to Job Feed</a>
          
@@ -205,146 +243,103 @@
 
 
 
-
-
-
-<section id="breadcrumb">
+<div id="breadcrumb">
 <div class="container">
 <div class="row">
 
-<div class="breadcrumbs fleft col-xs-12" typeof="BreadcrumbList" vocab="http://schema.org/">
+      <div class="breadcrumbs fleft col-xs-12" typeof="BreadcrumbList" vocab="http://schema.org/">
 
-<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Ai Group Apprentice and Trainee Centre (Ai Group ATC)." href="#" class="home">
-<span property="name">Ai Group</span></a>
-</span>
+      <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Ai Group Apprentice and Trainee Centre (Ai Group ATC)." href="#" class="home">
+      <span property="name">Ai Group</span></a>
+      </span>
 
-<span>»</span><span property="itemListElement" typeof="ListItem">
-<span property="name">About Us</span>
-</span>   
+      <span>»</span><span property="itemListElement" typeof="ListItem">
+      <span property="name">About Us</span>
+      </span>   
+
+      </div>
 
 </div>
-
 </div>
 </div>
-</section>
-
-
 
 
 <div class="content">
-
-
-
-
-
-
-
-
-<div class="container section main-content">
-
-
-<div class="col-md-3" id="sidebar">
-
-        <nav class="nav bottommargin">
-        <ul>
-        <li class="active"><a href="#">About Us</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Our History</a></li>
-        </ul>
-        </nav>
-
-
-<div class="row stats">
-
-
-    <div class="col-xs-12">
-    <h3 class="stats--title"><span class='numscroller' data-min='1' data-max='200' data-delay='5' data-increment='10'>200</span></h3>
-    <h4>Years of Experience</h4>
-    <p>Over 200 years of combined staff years of experience in Group Training and dealing with apprentices and trainees</p>
-    </div>
-
-
-</div>
-
-
-          <div class="testimonials row section__bdr-top section__bdr-light-grey">
-  <div class="col-xs-12">
-    <img class="testimonials--avatar" src="images/avatar.jpg" alt="Avatar">
-    <p class="testimonials--text">We place apprentices and trainees with host organisations across all states and territories, and are a proud partner to more than 200 host organisations including some of Australia’s leading organisations.</p>
-    <h4>David Smith</h4>
-    </div>
-
-          </div>
-
-</div>
-
-<div class="col-md-9">
-    <h1>Who We Are</h1>
-
+<div class="container">
+<section class="section main-content">
 <div class="row">
 
-<div class="col-xs-6"> 
- 
-  <blockquote>
-  The Australian Industry Group (Ai Group) is Australia's peak industry association. Acting on behalf of business for more than 140 years, we are the country's only truly national employers' organisation.
-  </blockquote>
-  
-   <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus et tortor vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque laoreet consequat est nec convallis. Mauris eu nisi quam.
-  </p>
 
- <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus et tortor vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque laoreet consequat est nec convallis. Mauris eu nisi quam.
-  </p>
 
-  
+<div class="col-xs-12 col-md-3" id="sidebar">
+    <nav class="nav">
+    <ul class="sidebar-menu">
+        <li class="active"><a href="#">About Us</a>
+          <ul class="sidebar-menu--list">
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Culture</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our History</a></li>
+          </ul>
+        </li>
+      </ul>
+      </nav>
 </div>
 
+<!-- END SIDEBAR -->
 
-   <div class="col-xs-6">
-      <figure class="graphic-platforms loaded">
-      <div class="back shadow"></div>
-      <img class="back site" src="images/back-site.svg">
-      <div class="front shadow"></div>
-      <!-- <img class="front site" src="images/front-site.svg"> -->
 
-      <img class="front site" src="images/youtube-image.png">
+<!-- MAIN TEXT AREA -->
+<div class="col-xs-12 col-md-9" id="right-column">
 
+ <h1>Who We Are</h1>
+
+ <!-- EDITABLE CONTENT BELOW -->
+
+
+ <img src="images/image-blog.jpg" alt="Blog Image" class="image-respsonsive img__pull-right">
+ <!-- EDITABLE CONTENT BELOW -->
+
+      <blockquote>
+      The Australian Industry Group (Ai Group) is Australia's peak industry association. Acting on behalf of business for more than 140 years, we are the country's only truly national employers' organisation.
+      </blockquote>
       
+       <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus et tortor vitae pellentesque. Orci varius natoque penatibus et </p>
 
 
-      </figure>
-   </div>
 
-   <div class="col-xs-12">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in sem ultricies, elementum massa sit amet, aliquam elit. Vestibulum viverra massa molestie magna porttitor ornare. Praesent a dui sed nibh vehicula tincidunt. Suspendisse ac gravida dui, eget ultrices nulla. Cras commodo et ex ac pharetra. In pulvinar efficitur lorem non semper.</p> 
+
+<h4>Aenean a turpis ut tortor viverra </h4>
+
+<p> Aenean a turpis ut tortor viverra pulvinar non ac tortor. Pellentesque venenatis ligula et efficitur congue. Donec condimentum dignissim dolor vel gravida. Morbi vitae nisi efficitur, interdum tellus sit amet, lacinia mi. </p>
+
+<ul>
+<li>Nulla non turpis sit amet felis </li>
+<li>scelerisque pulvinar. Maecenas pretium, </li>
+<li>urna a tincidunt egestas, </li>
+<li> massa ipsum feugiat purus, </li>
+<li>quis pharetra leo nulla eget dolor. </li>
+</ul>
 
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in sem ultricies, elementum massa sit amet, aliquam elit. Vestibulum viverra massa molestie magna porttitor ornare. Praesent a dui sed nibh vehicula tincidunt. Suspendisse ac gravida dui, eget ultrices nulla. Cras commodo et ex ac pharetra. In pulvinar efficitur lorem non semper.</p> 
-
-    <h4>Aenean a turpis ut tortor viverra </h4>
-
-    <p> Aenean a turpis ut tortor viverra pulvinar non ac tortor. Pellentesque venenatis ligula et efficitur congue. Donec condimentum dignissim dolor vel gravida. Morbi vitae nisi efficitur, interdum tellus sit amet, lacinia mi. </p>
-
-    <ul>
-    <li>Nulla non turpis sit amet felis </li>
-    <li>scelerisque pulvinar. Maecenas pretium, </li>
-    <li>urna a tincidunt egestas, </li>
-    <li> massa ipsum feugiat purus, </li>
-    <li>quis pharetra leo nulla eget dolor. </li>
-    </ul>
 
 
 
 <div class="panel-group" id="accordion">
+  
+
   <div class="panel panel-default">
+
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
         Collapsible Group 1</a>
       </h4>
     </div>
+
+
     <div id="collapse1" class="panel-collapse collapse in">
       <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -352,6 +347,8 @@
       commodo consequat.</div>
     </div>
   </div>
+
+
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -380,6 +377,17 @@
       commodo consequat.</div>
     </div>
   </div>
+
+</div>
+
+
+
+
+
+</div> <!-- END EDITABLE CONTENT RIGHT COLUMN-->
+</div><!-- row -->
+</section>
+</div>
 </div>
 
 
@@ -387,82 +395,44 @@
 
 
 
-
-    <p>Aenean ex ante, ultricies vitae lorem id, pharetra porttitor purus. Pellentesque placerat eu augue volutpat tincidunt. Integer a blandit nulla. Donec interdum scelerisque maximus. Praesent augue risus, fringilla fringilla mi quis, vehicula tincidunt turpis.</p> 
-
-    <p>Pellentesque sit amet posuere metus. Aliquam ex orci, iaculis eu aliquam a, viverra at leo. Suspendisse interdum tellus a pretium dictum. Phasellus congue id urna quis tincidunt. Vivamus non luctus dui. Mauris sollicitudin porta enim. Nulla ut varius massa. Maecenas euismod risus nisl, a fermentum diam tempus at. Aenean aliquet urna gravida felis scelerisque laoreet. Aenean sed ipsum sed tellus ultrices feugiat.</p>
-   </div>
-
-</div>
-
-
-<!--     <img class="front site" src="/img/v3/payments/graphic-platforms/front-site.svg"> -->
-</div>
-
-
-
-
-</div>
-
-
-
-
-<div class="clearfix"></div>
-
-
-<section class="quicklinks about-qlinks section section__bdr-top section__bdr-light-grey">
+<section class="quicklinks tapestry-qlinks section section__bdr-top section__bdr-light-grey">
 <div class="container">
 <div class="row">
  
 
 
 
-        <div class="full-width-sm col-xs-6 common-hgt">
-            <div class="icon-widget icon-widget__lg  icon-widget__yellow">
-                <img src="images/icons/about/icon-1.svg" alt="Apprentices">
-                <h3>Careers</h3>
-                <p>Lorem Ipsum Dolor</p>
-                <div class="clearfix"></div>
-         
-            </div>
+        <div class="col-xs-12 col-sm-6 common-hgt">
+            <a class="icon-widget icon-widget__lg  icon-widget__yellow careers" href="/about/careers">
+              Careers
+            </a>
         </div>
 
 
-        <div class="full-width-sm col-xs-6 common-hgt" data-wow-delay=".3s">
+        <div class="full-width-sm col-xs-12 col-sm-6 common-hgt" data-wow-delay=".3s">
        
 
 
                <div class="row">
                  
-                      <div class="col-xs-6 col-sm-6">
-                    <div class="icon-widget icon-widget__sm icon-widget__yellow">
-                    <img src="images/icons/about/icon-2.svg" alt="Looking for an Apprentice?">  
-                    <h4>Culture</h4>
-                     </div>
+                    
+                    <div class="col-xs-6 col-sm-6">
+                        <a class="icon-widget icon-widget__sm icon-widget__yellow culture" href="/about/our-culture">Culture</a>
                     </div>
 
 
                     <div class="col-xs-6 col-sm-6" data-wow-delay=".2s">
-                    <div class="icon-widget icon-widget__sm icon-widget__yellow">
-                    <img src="images/icons/about/icon-3.svg" alt="The Apprentice Tool Kit">  
-                    <h4>Our People</h4>
-                    </div>
+                        <a class="icon-widget icon-widget__sm icon-widget__yellow people" href="/about/our-people">Our People</a>
                     </div>
 
 
                     <div class="col-xs-6 col-sm-6" data-wow-delay=".6s">
-                    <div class="icon-widget icon-widget__sm icon-widget__yellow">
-                    <img src="images/icons/about/icon-4.svg" alt="Looking to upskill your workforce?">  
-                    <h4>Human Resources</h4>
-                    </div>
+                      <a class="icon-widget icon-widget__sm icon-widget__yellow human-resources" href="/about/our-mission">Our Mission</a>
                     </div>
 
 
                     <div class="col-xs-6 col-sm-6" data-wow-delay="1s">
-                    <div class="icon-widget icon-widget__sm  icon-widget__yellow">
-                    <img src="images/icons/about/icon-5.svg" alt="AI Group">  
-                    <h4>Our History</h4>
-                    </div>
+                      <a class="icon-widget icon-widget__sm  icon-widget__yellow our-history" href="/about/our-history">Our History</a>
                     </div>
 
 
@@ -475,316 +445,290 @@
 
 </div>
 </div>
-
-
-
-
-
-<!-- INTRO  -->
-<section class="section section-purple-gradient-bg">
-<div class="container">
-<div class="row tcenter">
-
-
-<h2 class="nomnargin__top wow fadeInUp" data-wow-delay=".2s">Why Choose Us</h2>
-
-
-
-<div class="topmargin clearfix lower-icons nopadding__bottom">
-
-        <div class="col-xs-6 col-sm-3  wow fadeInUp">
-        <div class="icon-widget icon-widget__sm">
-        <img src="images/icons/why-choose-us/coffee.svg" alt="Looking for an Apprentice?">  
-        <h4>150 years Experience</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus et tortor vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes.</p>
-     
-        </div>
-        </div>
-
-
-        <div class="col-xs-6 col-sm-3  wow fadeInUp" data-wow-delay=".2s">
-        <div class="icon-widget icon-widget__sm">
-        <img src="images/icons/why-choose-us/money.svg" alt="The Apprentice Tool Kit">  
-        <h4>Market Leading Fees</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus et tortor vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes.</p>
- 
-        </div>
-        </div>
-
-
-        <div class="col-xs-6 col-sm-3  wow fadeInUp" data-wow-delay=".6s">
-        <div class="icon-widget icon-widget__sm">
-        <img src="images/icons/why-choose-us/time.svg" alt="Looking to upskill your workforce?">  
-        <h4>We Save you Time</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus et tortor vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes.</p>
-       
-        </div>
-        </div>
-
-
-        <div class="col-xs-6 col-sm-3  wow fadeInUp" data-wow-delay="1s">
-        <div class="icon-widget icon-widget__sm">
-        <img src="images/icons/why-choose-us/search.svg" alt="AI Group">  
-        <h4>Superior Talent Pool</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus et tortor vitae pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, </p>
-        
-        </div>
-        </div>
-
-</div><!-- section -->
-
-
-
-</div>
-</div>
 </section>
 
 
 
 
 
-<section class="section__bdr-top section__bdr-orange section section__grey-bg">
-<div class="container">
 
-<div class="row">
+<section class="section video-playlist section-grey-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+
+  <h2>Media Gallery
+  </h2>
+
+    <div id="playlist"></div>
 
 
-<div class="col-xs-12">
+
+
   
 
-  <h2 class="tcenter">Interesting Articles</h2>
-
-<div id="exTab1" class="topmargin "> 
-
-    <ul  class="nav nav-tabs">
-      <li class="active">
-        <a  href="#1a" data-toggle="tab">Candidate Tips</a>
-      </li>
-      <li><a href="#2a" data-toggle="tab">Employer Tips</a>
-      </li>
-<!--       <li><a href="#3a" data-toggle="tab">Applying clearfix</a>
-      </li>
-      <li><a href="#4a" data-toggle="tab">Background color</a> -->
-      </li>
-    </ul>
-
-    <div class="tab-content clearfix">
-
-      <div class="tab-pane active" id="1a">
-        
-
-        <div class="row">
-
-          <div class="col-sm-12 col-md-6">
-                <div class="tab-item">
-
-                    <div class="tab-item--image tab-item--image-1 tab-item--child"></div>
-
-                    <div class="tab-item--text tab-item--child">
-                        <h4>Getting Started</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis lobortis orci vel pharetra. Vivamus quis ligula tortor. </p>
-                        <p><a class="read-more" href="#">Read More</a></p>
-                    </div>
-
-                </div>
-          </div>
-
-
-          <div class="col-sm-12 col-md-6">
-                <div class="tab-item">
-
-                    <div class="tab-item--image tab-item--image-2 tab-item--child"></div>
-
-                    <div class="tab-item--text tab-item--child">
-                        <h4>Getting Started</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis lobortis orci vel pharetra. Vivamus quis ligula tortor. </p>
-                        <p><a class="read-more" href="#">Read More</a></p>
-                    </div>
-
-                </div>
-          </div>
-
-
-          <div class="col-sm-12 col-md-6">
-                <div class="tab-item">
-
-                    <div class="tab-item--image tab-item--image-3 tab-item--child"></div>
-
-                    <div class="tab-item--text tab-item--child">
-                        <h4>Getting Started</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis lobortis orci vel pharetra. Vivamus quis ligula tortor. </p>
-                        <p><a class="read-more" href="#">Read More</a></p>
-                    </div>
-
-                </div>
-          </div>
 
 
 
-          <div class="col-sm-12 col-md-6">
-                <div class="tab-item">
-
-                    <div class="tab-item--image tab-item--image-4 tab-item--child"></div>
-
-                    <div class="tab-item--text tab-item--child">
-                        <h4>Getting Started</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis lobortis orci vel pharetra. Vivamus quis ligula tortor. </p>
-                        <p><a class="read-more" href="#">Read More</a></p>
-                    </div>
-
-                </div>
-          </div>
-
-
-
-
-
-        </div>
       </div>
+    </div>
+  </div>
+</section>
 
-<div class="tab-pane" id="2a">
+
+<!-- TWITTER FEED -->
+
+<section class="section video-playlist">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+
+<h2>The Latest from the Ai Group</h2>
+
+<!--     <div id="example1"></div>
+    <h2>Query 2: What people are saying about me!</h2>
+    <div id="example2"></div> -->
+<!--     <h2>Query 3: Last 5 Twitter posts using hastag #Caturday, including images (if any)</h2> -->
+
+
+    <div id="twitter-feed"></div>
+<!-- 
+<div class="fanspage"></div>
+            
+<div id="groups"></div> -->
+
+<div class="clearfix"></div>
+     <div id="fb-posts" class="social-feed-fb no-comments" data-social-id="119540751508982" data-options="limit:8"></div>
+
+<!--     <h2>Query 4: Last 3 Twitter posts using hastag #API</h2>
+    <div id="example4"></div>
+    <h2>Query 5: Last 3 Twitter posts using hastag #API with custom callback</h2>
+    <div id="example5"></div> -->
+
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 <div class="row">
 
-   <div class="col-sm-12 col-md-6">
-                <div class="tab-item">
 
-                    <div class="tab-item--image tab-item--image-1 tab-item--child"></div>
+      <div class="col-md-10">
 
-                    <div class="tab-item--text tab-item--child">
-                        <h4>Getting Started</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis lobortis orci vel pharetra. Vivamus quis ligula tortor. </p>
-                        <p><a class="read-more" href="#">Read More</a></p>
-                    </div>
-
-                </div>
-          </div>
+      <h1 class="page-title">Our History</h1>
 
 
-          <div class="col-sm-12 col-md-6">
-                <div class="tab-item">
-
-                    <div class="tab-item--image tab-item--image-2 tab-item--child"></div>
-
-                    <div class="tab-item--text tab-item--child">
-                        <h4>Getting Started</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis lobortis orci vel pharetra. Vivamus quis ligula tortor. </p>
-                        <p><a class="read-more" href="#">Read More</a></p>
-                    </div>
-
-                </div>
-          </div>
+      <blockquote>The Australian Industry Group (Ai Group) is Australia's peak industry association. Acting on behalf of business for more than 140 years, we are the country's only truly national employers' organisation.</blockquote>
+      </div>
 
 
-      
+      <div class="col-md-6">
 
+      <p>Ai Group represents the interests of more than 60,000 businesses employing more than 1 million staff. Our longstanding involvement with diverse industry sectors including manufacturing, construction, transport, labour hire, mining services, defence, airlines
+      and ICT means we are genuinely representative of Australian industry. With more than 250 staff in offices across NSW, QLD, SA, VIC and WA, we have the resources and the expertise to meet the changing needs of our members.</p>
+      </div>
+
+
+
+      <div class="col-md-6">
+
+
+      <p>We provide the practical information, advice and assistance you need to run your business more effectively. Ai Group also offers members a voice at all levels of government through our policy leadership and influence.</p>
+
+      <p>Our deep experience of industrial relations and workplace law positions Ai Group as the leading advocate on behalf of enterprises large and small across Australia. We intrinsically appreciate the challenges facing industry and remain at the cutting edge
+      of policy debate and legislative change – and strategic business management.</p>
+      </div>
 
 
 
 </div>
+
+
+
+
+<div class="row">
+
+<div class="col-md-10"><h1>Useful Candidate Templates &amp; Tools</h1></div>
+
+<div class="col-xs-6 col-sm-4 col-md-3 resume-listing-item"><span><i class="fa fa-download" aria-hidden="true"></i></span><a href="Resume_1_with_Cover_Letter_Template.docx" target="_blank"><img  class="img-responsive" src="/resources/useful-candidate-templates-tools/cv_1.jpg" alt="Resume 1" /></a></div>
+<div class="col-xs-6 col-sm-4 col-md-3 resume-listing-item"><span><i class="fa fa-download" aria-hidden="true"></i></span><a href="Resume_3_with_Cover_Letter_Template.docx" target="_blank"><img  class="img-responsive" src="/resources/useful-candidate-templates-tools/cv_2.jpg" alt="Resume 2" /></a></div>
+<div class="col-xs-6 col-sm-4 col-md-3 resume-listing-item"><span><i class="fa fa-download" aria-hidden="true"></i></span><a href="Resume_3_with_Cover_Letter_Template.docx" target="_blank"><img  class="img-responsive" src="/resources/useful-candidate-templates-tools/cv_3.jpg" alt="Resume 3" /></a></div>
+<div class="col-xs-6 col-sm-4 col-md-3 resume-listing-item"><span><i class="fa fa-download" aria-hidden="true"></i></span><a href="Resume_4_with_Cover_Letter_Template.docx" target="_blank"><img  class="img-responsive" src="/resources/useful-candidate-templates-tools/cv_4.jpg" alt="Resume 4" /></a></div>
+<div class="col-xs-6 col-sm-4 col-md-3 resume-listing-item"><span><i class="fa fa-download" aria-hidden="true"></i></span><a href="Resume_5_with_Cover_Letter_Template.docx" target="_blank"><img  class="img-responsive" src="/resources/useful-candidate-templates-tools/cv_5.jpg" alt="Resume 5" /></a></div>
+<div class="col-xs-6 col-sm-4 col-md-3 resume-listing-item"><span><i class="fa fa-download" aria-hidden="true"></i></span><a href="Resume_6_with_Cover_Letter_Template.docx" target="_blank"><img  class="img-responsive" src="/resources/useful-candidate-templates-tools/cv_6.jpg" alt="Resume 6" /></a></div>
+
+
 </div>
 
-      <div class="tab-pane" id="3a">
-        <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
-      </div>
 
-        <div class="tab-pane" id="4a">
-        <h3>We use css to change the background color of the content to be equal to the tab</h3>
-      </div>
 
+
+<div class="container">
+  <div class="row">
+
+
+
+
+<h1 class="page-title">Our Mission</h1>
+
+<div class="col-md-10">
+  <blockquote>Our Mission is what role we see we want Ai Group to play in realising our vision. We want to be Australian Industry’s strongest voice and most enduring partner.</blockquote>
+</div>
+
+
+
+<h4>Vision</h4>
+
+
+<p>Our Vision is what it is that we believe in and what we want Ai Group to make a difference in achieving.</p>
+
+<p><strong>Thriving industry for a prosperous community </strong>
+</p>
+
+<p>Reflecting not just the importance we attach to the success of Australian industry but also our desire that its success helps to lift the well-being of the broader community in which we live.</p>
+
+<h4>Values</h4>
+
+<p>Our <strong>Values</strong> capture the ways we want to go about what we do.
+  <br />We want to: <strong>Put our members front and centre of all that we do. </strong>
+  <br />We seek to: <strong>Be connected, build relationships and be a team. </strong>
+  <br />We want our people to: <strong>Pursue excellence, growth and learning. </strong>
+  <br />And we will: <strong>Act with integrity, accountability and fairness.</strong>
+</p>
+
+
+
+
+    
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<h1>Careers</h1>
+
+<blockquote>Connected, flexible and sustainable, we ensure you'll have the opportunity to be involved in conversations and share your ideas.</blockquote>
+
+<p>Our workplaces provide opportunities to help fast track your learning and your success. A career at Ai Group could take you anywhere.</p>
+
+<h3>Why us</h3>
+
+
+<div class="row">
+  <div class="col-md-6 icon-widget icon-widget__sm tleft">
+
+    <img src="/images/diversity.svg" class="" alt="diversity">
+
+
+  <h4>Diversity and Inclusion</h4>
+
+<p>We are a diverse bunch here at Ai Group – you’ll find individuals from varied backgrounds with different ways of thinking, different skills and different experiences. Ai Group understands the importance of diversity and inclusion – our long history of
+  success has come from being different.</p>
+
+<p>We harness the strength of our diversity through inclusion. Inclusion means creating a workplace environment where people feel they can be themselves, regardless of their gender, age, ethnicity or cultural affiliation, sexual orientation, beliefs or educational
+  background.</p></div>
+
+
+  <div class="col-md-6 icon-widget icon-widget__sm tleft">
+
+      <img src="/images/flexibility.svg" class="" alt="flexibility">
+
+
+    <h4>Flexibility</h4>
+
+<p>We are big on being flexible whether it is offering differing start and finish times, part time hours or work from home we have you covered! Strong Connections – You will be working with some of Australia’s leading companies to help them be the best that
+  they can be.</p>
+
+<p>Through this your network will become unparalleled.</p>
+
+
+  </div>
+
+
+<div class="col-md-6 icon-widget icon-widget__sm tleft">
+
+    <img src="/images/path.svg" class="" alt="path">
+
+<h4>A path forward</h4>
+
+<p>We are focused on your success – we want our people to not only succeed but also grow through our commitment to learning and development.</p>
+
+
+</div>
+
+
+<div class="col-md-6 icon-widget icon-widget__sm tleft">
+
+    <img src="/images/industry.svg" class="" alt="industry">
+
+
+<h4>A team shaping Australian Industry</h4>
+
+<p>We work hand in hand with industry to shape the future of the Australian economy – we support great working conditions and viable policies to help Australian businesses succeed every day. So you can be proud of the work that you do now and into the future</p>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section section-grey-bg">
+    <div class="row testimonials-full-width tcenter">
+    <div class="col-sm-12">
+      <blockquote>For 39 years, Ai Group has taken the time to understand our business so they give us the right advice, with everything from workplace issues to business reviews.</blockquote>
+
+      <h4>JAMIE BAENSCH</h4>
+      <span>GENERAL MANAGER, AIR RADIATORS</span>
     </div>
 
-
+    <div class="clearfix">&nbsp;</div>
   </div>
-
-
-
-</div>
-</div>
-
-</div>
+  <!-- row -->
 </section>
 
 
 
 
-
-
-
-
-</div><!-- END content -->
-<!-- END PUSH DOWN CONTENT DIV -->
-
-
-
-<footer id="sticky-footer" class="dark">
-<div id="copyrights">
-<div class="container clearfix">
-
-
-<div class="row">
-<div class="col-sm-12">
-
-<div class="sticky-footer--row">
-
-<a href="#"  class="sticky-footer--icon standard-logo pull-left">
-<img src="images/icons/email.svg" width="40"  alt="Logo">
-</a> 
-
-<h3 class="sticky-footer--text">Subscribe to Job Feed<!-- <span>Subscribe &amp; receive daily job updates. </span> --></h3> 
-
-
-<div class="owl-next" style="display: none"><a href="#subscribe-form"><i class="icon-angle-right"></i></a></div>
-
-<form class="form-inline">
-  <div class="form-group">
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="First Name">
+ 
+<section class="section section-bg clearfix  parallax--bg__city  dark-bg">
+<div class="parallax--right-img"></div>
+  <div class="container">
+    <div class="row">
+          <div class="col-md-6 col-md-offset-3 tcenter">
+              <h4 class="section-bg--title wow fadeInUp" >Register a Vacancy</h4>
+              <p class="section-bg--text wow fadeInUp" data-wow-delay=".2s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <a class="aig-btn section-bg--btn aig-btn__reversed wow fadeInUp"  data-wow-delay=".6s" href="#candidate-rego-form"  role="button">Register Today</a>
+          </div>
+    </div>
   </div>
-
-    <div class="form-group">
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="Last Name">
-  </div>
-
-
-  <div class="form-group">
-
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-  </div>
-  <button type="submit" class="btn btn-default">Subscribe</button>
-
-    <a href="#subscribe-form" class="btn btn-default">Subscribe</a>
-
-</form>
-
-
-<!-- <a href="#" class="sticky-footer--close-btn"><i class="fa fa-times" aria-hidden="true"></i></a>
- -->
-
-</div>  
-
-
-</div>
-</div>
-</div>
-
-
-
-
-</div>
-</div>
-</footer>
-
-<!-- <section class="section section-bg clearfix section-orange-bg dark-bg">
-<div class="container">
-<div class="row">
-      <div class="col-md-6 col-md-offset-3 tcenter">
-          <h4 class="section-bg--title wow fadeInUp" >Register a Vacancy</h4>
-          <p class="section-bg--text wow fadeInUp" data-wow-delay=".2s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-          <a class="aig-btn section-bg--btn aig-btn__reversed wow fadeInUp"  data-wow-delay=".6s" href="#contact-form"  role="button">Register Today</a>
-      </div>
-</div>
-</div>
 </section>
- -->
+
+
 
 
 
@@ -800,7 +744,7 @@
 
 
 
-        <div class="col-sm-12">
+        <div class="col-xs-12">
           <div id="customers-testimonials" class="owl-carousel owl-theme">
 
  
@@ -845,10 +789,6 @@
             <!--END OF TESTIMONIAL 2 -->
 
 
-
-
-
-         
        
           </div>
         </div>
@@ -857,115 +797,168 @@
     </section>
 
 
-
-
-
-
-
-
-
-
 <footer>
-
-
-
-
-
-
-
-
-<section class="section clearfix dark-bg dark-grey-bg lower-footer">
-<div class="container">
-<div class="row">
-
-  <div class="col-md-3 pull-left">
-    <img src="images/logo.svg" alt="Logo Footer" width="140">
-  </div>
-
-<div class="col-xs-12 col-md-8 pull-right footer-links">
+    <section class="section clearfix dark-bg dark-grey-bg lower-footer">
+    <div class="container">
     <div class="row">
-        <div class="col-xs-3">
-            <h4>Candidates</h4>
-            <ul>
-              <li><a href="#">Our Unique Approach</a></li>
-              <li><a href="#">Find a Job</a></li>
-              <li><a href="#">Create a Profile</a></li>
-            </ul>
+
+      <div class="col-md-3 pull-left">
+      <img src="images/logo.svg" alt="Logo Footer" width="140">
+      </div>
+
+    <div class="col-xs-12 col-md-9 pull-right footer-links">
+        <div class="row">
+
+
+            <div class="col-xs-3">
+                <h4>Candidates</h4>
+                <ul>
+                  <li><a href="#">Our Unique Approach</a></li>
+                  <li><a href="#">Find a Job</a></li>
+                  <li><a href="#">Create a Profile</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-xs-3">
+                <h4>Employers</h4>
+                <ul>
+                  <li><a href="#">Solving Your Problem</a></li>
+                  <li><a href="#">Our Service &amp; Fees</a></li>
+                  <li><a href="#">Calculate your rate</a></li>
+                  <li><a href="#">Make an enquiry</a></li>
+                  <li><a href="#">Book a consultation</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-xs-3">
+                <h4>Resources</h4>
+                <ul>
+                  <li><a href="#">Great Articles &amp; Videos</a></li>
+                  <li><a href="#">Useful Candidate Templates &amp; Tools</a></li>
+                  <li><a href="#">Useful Employer Templates &amp; Tools</a></li>
+                  <li><a href="#">Govt Policy &amp; Reports</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-xs-3">
+                <h4>About</h4>
+                <ul>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Culture</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Our History</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+
         </div>
-
-
-        <div class="col-xs-3">
-            <h4>Employers</h4>
-            <ul>
-              <li><a href="#">Solving Your Problem</a></li>
-              <li><a href="#">Our Service &amp; Fees</a></li>
-              <li><a href="#">Calculate your rate</a></li>
-              <li><a href="#">Make an enquiry</a></li>
-              <li><a href="#">Book a consultation</a></li>
-            </ul>
-        </div>
-
-
-        <div class="col-xs-3">
-            <h4>Resources</h4>
-            <ul>
-              <li><a href="#">Great Articles &amp; Videos</a></li>
-              <li><a href="#">Useful Candidate Templates &amp; Tools</a></li>
-              <li><a href="#">Useful Employer Templates &amp; Tools</a></li>
-              <li><a href="#">Govt Policy &amp; Reports</a></li>
-            </ul>
-        </div>
-
-
-        <div class="col-xs-3">
-            <h4>About</h4>
-            <ul>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Culture</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Our History</a></li>
-            </ul>
-        </div>
-
-
-
-
-
-
     </div>
+
+    </div><!-- row -->
+    </div><!-- container -->
+    </section>
+
+    <div class="copyrights">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+        <p>Copyright 2017 The Australian Industry Group&nbsp;&nbsp;<a href=" Terms of Usage">Terms of Usage</a>&nbsp;&nbsp;<a href="#"> Privacy Statement</a>&nbsp;&nbsp;<a href="#">Help</a></p>
+
+        <ul class="social-media-icons">
+        <li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="http://plus.google.com/"><i class="fa fa-google-plus"></i> </a></li>
+        </ul>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+</div><!-- END PUSH DOWN CONTENT DIV -->
+
+
+<!-- STICKY FOOTER -->
+
+
+<footer id="sticky-footer" class="dark">
+
+
+<div id="copyrights">
+<div class="container clearfix">
+
+
+        <div class="row">
+        <div class="col-sm-12">
+
+        <div class="sticky-footer--row">
+
+                <a href="#"  class="sticky-footer--icon standard-logo pull-left">
+                <img src="images/icons/email.svg" width="40"  alt="Logo">
+                </a> 
+
+                  <h3 class="sticky-footer--text">Subscribe to Job Feed</h3> 
+
+
+                  <div class="owl-next" style="display: none"><a href="#subscribe-form"><i class="icon-angle-right"></i></a></div>
+
+                  <form class="form-inline">
+
+                      <div class="form-group">
+                      <input type="text" class="form-control" placeholder="First Name">
+                      </div>
+
+                      <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Last Name">
+                      </div>
+
+                      <div class="form-group">
+                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                      </div>
+
+                      <button type="submit" class="btn btn-default">Subscribe</button>
+                      <a href="#subscribe-form" class="btn btn-default">Subscribe</a>
+
+                  </form>
+
+
+
+        </div>
+        </div>  
+
+
+
 </div>
-
-</div><!-- row -->
-</div><!-- container -->
-</section>
-
-<div class="copyrights">
-<div class="container">
-<div class="row">
-    <div class="col-sm-12">
-    <p>Copyright 2017 The Australian Industry Group&nbsp;&nbsp;<a href=" Terms of Usage">Terms of Usage</a>&nbsp;&nbsp;<a href="#"> Privacy Statement</a>&nbsp;&nbsp;<a href="#">Help</a></p>
-    </div>
 </div>
 </div>
 </footer>
+<!-- END STICKY FOOTER -->
+
 
 </div> <!-- END O WRAPPZER -->
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
 
 
 
 
-
-
-
-<!-- <div id="search">
-<button type="button" class="close-button"></button>
-<form>
-<input type="search" value="" placeholder="type keyword(s) here" />
-<button type="submit" class="btn btn-primary aig-btn aig-btn__reversed hero--btn">Search</button>
-</form>
-</div> -->
-
-
+<!-- SEARCH FORM -->
 
 <div id="search" class="form-bg-full-width pop-up">
   <button type="button" class="close-button"></button>
@@ -977,38 +970,157 @@
 </div>
 
 
-<div id="contact-form" class="form-bg-full-width form-wrapper">
+<!-- END SEARCH FORM -->
+
+
+
+<!-- CANDIDATE REGO -->
+
+<div id="candidate-rego-form" class="form-bg-full-width form-wrapper pop-up">
 <button type="button" class="close-button"></button>
+
+<div class="vertical-center">
 <div class="container">
 
-    <h2>Online Enquiry</h2>
-  <?php gravity_form( 1, $display_title = false,  $display_inactive = false, $field_values = null, $ajax = true, $tabindex, $echo = true ); ?>
+
+<div class="col-xs-12"><h2>Candidate Registration</h2></div>
+
+<form class="form-horizontal" name="commentform" method="post" action="#">
+
+    <div class="col-xs-12 col-sm-6">
+    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-6"> <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-6">
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-6">
+    <div class="custom-file-upload">
+    <input placeholder="Upload Resume" type="file" id="file" name="myfiles[]" />
+    </div>
+    </div>
+
+
+    <div class="col-xs-12"> <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-6 pull-right">
+    <button type="submit" value="Submit" class="aig-btn btn-custom pull-right">Submit Details</button>
+    </div>
+
+
+</form>
+
+
+
+</div>
 </div>
 </div>
 
+<!-- END REGO CANDIDATE FORM -->
+
+
+
+
+
+
+<!-- EMPLOYER REGO -->
+
+<div id="employer-rego-form" class="form-bg-full-width form-wrapper pop-up">
+<button type="button" class="close-button"></button>
+
+<div class="vertical-center">
+<div class="container">
+
+
+<div class="col-xs-12"><h2>Employer Registration</h2></div>
+
+<form class="form-horizontal" name="commentform" method="post" action="#">
+
+    <div class="col-xs-12 col-sm-6">
+    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-6"> <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-6">
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-6">
+    <div class="custom-file-upload">
+    <input placeholder="Upload File" type="file" id="file" name="myfiles[]" />
+    </div>
+    </div>
+
+
+    <div class="col-xs-12"> <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-6 pull-right">
+    <button type="submit" value="Submit" class="aig-btn btn-custom pull-right">Submit Details</button>
+    </div>
+
+
+</form>
+
+
+
+</div>
+</div>
+</div>
+
+<!-- END REGO EMPLOYER FORM -->
+
+<!-- SUBSCRIBE FORM -->
 
 <div id="subscribe-form" class="form-bg-full-width form-wrapper pop-up">
+
+
 <button type="button" class="close-button"></button>
-<div class="container">
-<h2>Job Board Subscription</h2>
-<form>
-  <div class="form-group">
-    <input type="text"  id="exampleInputName2" placeholder="First Name">
-  </div>
 
-    <div class="form-group">
-    <input type="text"  id="exampleInputName2" placeholder="Last Name">
-  </div>
+<div class="vertical-center">
+    <div class="container">
+    <h2>Job Board Subscription</h2>
+    <form>
+      <div class="form-group">
+        <input type="text"  id="exampleInputName2" placeholder="First Name">
+      </div>
 
-  <div class="form-group">
-    <input type="email"  id="exampleInputEmail2" placeholder="jane.doe@example.com">
-  </div>
+        <div class="form-group">
+        <input type="text"  id="exampleInputName2" placeholder="Last Name">
+      </div>
 
-  <button href="#subscribe-form"  type="submit" class="btn btn-default">Subscribe</button>
-</form>
+      <div class="form-group">
+        <input type="email"  id="exampleInputEmail2" placeholder="jane.doe@example.com">
+      </div>
+
+      <button href="#subscribe-form"  type="submit" class="aig-btn pull-right">Subscribe</button>
+    </form>
+    </div>
 </div>
+
+
+
 </div>
-</div>
+
+
+<!-- END SUBSCRIBE FORM -->
+
+
 
 
 
@@ -1016,118 +1128,83 @@
 <script src="js/vendor/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
-
-
-
 <script src="js/plugins.js"></script>
+<script src="js/twitter.js"></script>
 <script src="js/main.js"></script>
 
+<script src="js/fb/fb.js"></script>
+
+     <!-- Main Javascript -->
+  <script type="text/javascript" src="youtube-video-player/js/youtube-video-player.jquery.min.js"></script>
+  <script type="text/javascript" src="youtube-video-player/packages/perfect-scrollbar/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="youtube-video-player/packages/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+<script type="text/javascript">
 
 
-
-               
-
-<script>
-jQuery(document).ready(function($) {
-
-
-$("#vertical-scroller").owlCarousel({
-loop: true,
-autoplay: true,
-items: 1,
-nav: false,
-autoplayHoverPause: true,
-animateOut: 'slideOutUp',
-animateIn: 'slideInUp'
-});
+    function set_log(title, val) {
+      $(".log").html('<div><span>'+title+'</span>'+val+'</div>'+$(".log").html());
+    }
 
 
 
 
 
-$('#customers-testimonials').owlCarousel({
-loop: false,
-margin: 10,
-autoplay: false,
-nav: false,
-center: true,
-// stagePadding: 50,
-responsiveClass: true,
+  jQuery(function($) {
+
+      $("#playlist").youtube_video({
+        playlist: 'PLX_YcuIauqgIQfjCUN_y0FZwoNuH6ExQ8',
+        channel: false,
+        user: false,
+        videos: false,
+        shuffle: false,
+        max_results: 50,
+        pagination: true,
+        continuous: true,
+        first_video: 0,
+        show_playlist: 'auto',
+        playlist_type: 'vertical',
+        show_channel_in_playlist:true,
+        show_channel_in_title: true,
+        width: false,
+        show_annotations: false,
+        now_playing_text: 'Now Playing',
+        load_more_text: 'Load More',
+        autoplay: false,
+        force_hd: false,
+        hide_youtube_logo: false,
+        play_control: true,
+        time_indicator: 'full',
+        volume_control: true,
+        share_control: true,
+        fwd_bck_control: true,
+        youtube_link_control: true,
+        fullscreen_control: true,
+        playlist_toggle_control:true,
+        volume: false,
+        show_controls_on_load: true,
+        show_controls_on_pause: true,
+        show_controls_on_play: false,
+        related: false,
+        player_vars: {},
+        colors: {},
+
+        on_load:      function(snippet) { set_log('loaded', snippet) },
+        on_done_loading:  function(videos) { set_log('videos', videos) },
+        on_state_change:  function(state) { set_log('state', state) },
+        on_seek:      function(seconds) { set_log('seek', seconds) },
+        on_volume:      function(volume) { set_log('volume', volume) },
+        on_time_update:   function(seconds) { set_log('time', seconds) },
+
+      });
 
 
-
-responsive: {
-0: {
-items: 1,
-nav: true,
-navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
-responsiveClass: true
-},
-
-
-780: {
-items: 1,
-nav: true,
-navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
-responsiveClass: true
-
-},
-1000: {
-items: 1,
-nav: true,
-loop: true,
-nav: true,
-navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
-responsiveClass: true
-
-}
-}
-});
-
-
-
-
-// $('#customers-testimonials').owlCarousel( {
-//     loop: true,
-//     center: true,
-//     items: 1,
-//     margin: 30,
-//     autoplay: true,
-//     dots:true,
-//     nav:true,
-//     autoplayTimeout: 8500,
-//     smartSpeed: 450,
-// navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
-//     responsive: {
-//       0: {
-//         items: 1
-//       },
-//       768: {
-//         items: 1
-//       },
-//       1170: {
-//         items: 1,
-//         nav: true,
-//         navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>']
-//       }
-//     }
-//   });
-
-
-
-});
+  $('#twitter-feed ul .interact a').addClass('fa fa-reply');
+  })
 </script>
 
 
 
 
-<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
-
-<script>document.write('<script src="http://'
-    + location.host.split(':')[0]
-    + ':35729/livereload.js"></'
-    + 'script>')</script>
-
-    
 </body>
 </html>

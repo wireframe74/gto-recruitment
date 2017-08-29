@@ -13,12 +13,27 @@
 	margin: 40px auto auto auto
 }
 .hero__showDesktop {
-	display: none
+	display: none;
+}
+
+
+.home .hero-container,
+.home .hero  {
+height: 600px;
+
+@media (max-width:767px) {
+	height:450px;
+}
+
+
 }
 
 	.hero-container {
 		height: 475px;
-		overflow: hidden
+		overflow: hidden;
+		@media (max-width:767px) {
+	height:450px;
+}
 	}
 	.hero {
 		// padding: 132px 0 60px;
@@ -31,7 +46,7 @@
 	}
 	.hero h1.aig-heading {
 		font-size: 40px;  
-		font-size: 3rem;   
+		font-size: 3.1rem;   
 		margin-top:0;
 
 
@@ -55,7 +70,11 @@
 
 	}
 	.hero .hero__container {
-		height: 100%
+		height: 100%;
+		z-index:2;
+		    position: relative;
+		    padding-left:15px;
+		    padding-right:15px;
 	}
 	.hero .hero__row {
 		position: relative;
@@ -66,7 +85,7 @@
 		margin-left: 0;
 		margin-top: 15px;
 			@extend .heading-font;
-			min-width:290px;  
+			min-width:270px;  
 			&:hover {
 				text-decoration:none;
 		
@@ -98,6 +117,12 @@
 		font-size: 18px;
 		font-size: 1.3rem;
 		color:#fff;
+
+		@media (min-width:300px) and (max-width:599px) {
+			
+		    margin-bottom:0;
+		}
+		
 	}
 	.hero__showDesktop {
 		display: block
@@ -113,7 +138,7 @@
 }
 
 .hero {
-// 	background-image: url("../images/header.jpg");
+// 	background-image: url("css/images/header.jpg");
 // 	background-position: 70% center;
 // background-attachment: fixed;
 	background-size: cover; 
@@ -180,13 +205,14 @@
 	}
 	
 	.home__hero .hero .aig-btn {
-		margin-top: 0;
+		margin-top: 30px;
 		font-family:'Roboto Slab', serif;
+		transition: all .5s;
 
 	}
 }
 .home__hero .hero {
-	background-image: url('../images/header.jpg')  
+	background-image: url('css/images/header.jpg')  
 }
 @media (max-width:767px) and (orientation:landscape) {
 	.home__hero .hero h1 {
@@ -198,3 +224,26 @@
 // .third {
 // 	visibility: hidden
 // }
+
+.home {
+
+		.hero h1.aig-heading{
+		font-weight: 300;
+		font-size: 4rem;
+
+		@media (min-width:600px) and (max-width:780px) {
+		font-size: 3rem;	
+		}
+
+		@media (min-width:300px) and (max-width:599px) {
+		font-size: 2.5rem;	
+		    margin: 20px 0 10px 0;
+		}
+
+
+		}
+ 
+		
+
+
+}

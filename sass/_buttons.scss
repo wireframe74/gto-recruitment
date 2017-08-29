@@ -47,6 +47,7 @@ letter-spacing: 0 !important;
     border: 2px solid  $primary-color;
     background: #fff;
     color: $primary-color;
+    min-width:250px;
 
     &:hover {
     color:#fff;
@@ -87,7 +88,7 @@ letter-spacing: 0 !important;
 
     @media (max-width:550px) {
     	width:100%;
-    	max-width:none;
+    	max-width:280px;
     }
     
     &:hover {
@@ -128,6 +129,7 @@ letter-spacing: 0 !important;
     	color:#fff;
         transition: background .2s;
         min-width:240px;
+        z-index:3;
 
         &:hover {
               background-color: white;

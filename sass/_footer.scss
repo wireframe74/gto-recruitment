@@ -1,3 +1,64 @@
+body .footer {
+    margin-top: 0;
+}
+
+ .copyrights  {
+
+	
+	p {
+
+			width:49%;
+			float:left;
+
+		@media (max-width:767px) {
+		width:50%;
+		float:left;
+		}
+
+
+		@media all and (min-width:1px) and (max-width:490px) {
+			width:100%;
+		  }
+		
+		
+		
+	 }
+
+
+
+	.social-media-icons {
+
+	float:left; 
+	margin:0;
+	margin-top: -5px;
+	margin-left: 20px;
+
+		@media (max-width:767px) {
+		width:50%;
+		float:right;
+		margin-left:0;
+		}
+		
+	}
+	.social-media-icons a i {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	font-size: 13px;
+	    padding-top: 9px;
+		
+	}
+
+
+	
+
+
+
+
+}
+
+
+
 .social-media-icons {
 
 	overflow: auto;
@@ -49,7 +110,7 @@ color: $dark-grey;
 
 
 .owl-next {
-	background: url(../images/icons/arrow.svg) no-repeat;
+	background: url(css/images/icons/arrow.svg) no-repeat;
     background-size: 14px;
     background-position: center center;
     background-color: #f47321;
@@ -69,7 +130,7 @@ color: $dark-grey;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-    background: url(../images/icons/arrow.svg) no-repeat;
+    background: url(css/images/icons/arrow.svg) no-repeat;
     background-size: 14px;
     background-position: center center;
 } 
@@ -96,10 +157,15 @@ h4 {
 	margin-top:0;
 	color:#fff;
 	margin-bottom:13px;
-// 	@extend .heading-font;
-// 	text-transform:none; 
+	    font-size: 1rem;
+	@extend .heading-font;
+	text-transform:none; 
+	font-weight:normal;
 }
 
+h4 + ul {
+	margin-top:20px;
+}
 
 
 
@@ -109,6 +175,7 @@ h4 {
 	li {
 		display: block;
 		font-size: .9rem; 
+		    margin: 5px 0;
 	}
 
 	a {
@@ -121,9 +188,10 @@ h4 {
 }
 
 .lower-footer {
-    background: url("../images/footer-fade.jpg") top left no-repeat;
+    background: url("css/images/footer-fade.jpg") top left no-repeat;
     background-size: 45%;
 //     border-top:4px solid $primary-color;
+padding-bottom: 200px;
 
     p {
     	color:#a0abb2;
@@ -133,15 +201,40 @@ h4 {
 
 .copyrights {
 	padding: 20px 0;
-	background-color: #293239;
+	background-color: #303a43;
 	color: #7f8488;
+	margin-top: -130px;
+	position:relative;
+
+	@media (max-width:767px) {
+	margin-top: -150px;
+	}
+
 
 	p {
 		margin: 0;
 		padding: 0;
 		font-size: .8em;
-		    margin-top: 5px;
-		    color:#8c8c8d;
+
+		color:#8c8c8d;
+		line-height:1.3rem;
+		margin-top: 2px;
+		display: inline-block;
+		float:left;
+		width:auto;
+
+		@media (max-width:767px) {
+	width:50%;
+	float:left;
+}
+
+		@media (max-width:500px) {
+	width:100%;
+	float:left;
+}
+
+
+
 	}
 
 	a {
@@ -167,6 +260,8 @@ z-index:10;
 
 	.btn {
 
+		padding: 7px;
+
 			 @media (min-width:861px) and (max-width:1047px) {
 			width: 126px;
 			min-width: 0;
@@ -186,9 +281,10 @@ z-index:10;
 	@media (max-width:490px) {
 		display:block!important;
 		opacity:1!important;
+		text-indent: -9999px;
 	}
 
-    background: url(../images/icons/arrow.svg) no-repeat;
+    background: url(css/images/icons/arrow.svg) no-repeat;
     background-size: 14px;
     background-position: center center;
     background-color: #f47321;
@@ -206,7 +302,7 @@ z-index:10;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-    background: url(../images/icons/arrow.svg) no-repeat;
+    background: url(css/images/icons/arrow.svg) no-repeat;
     background-size: 14px;
     background-position: center center;
     float: left;
@@ -275,6 +371,9 @@ button.btn {
 
 .btn {
 			 border-radius: 50px;
+			 background-color:#fff;
+			 	color:#111;
+			 	
 			 background-color:$primary-color;
 			 border:none;
 			 color:#fff;	
@@ -365,13 +464,13 @@ button.btn {
     text-shadow: none;
 
  
-    padding:20px 0;
+ height:60px;
   }
 
 
 .footer {
   min-width: 200px;
-  text-align: center;
+
 }
 
 .copyright span, .copyright a { margin: 0 10px; }
@@ -393,7 +492,7 @@ body.show-nav #sticky-footer.dark{
 
 
 	&--row {
-
+margin: 19px 0 0 0;
 
 	> * {
 
@@ -435,4 +534,8 @@ body.show-nav #sticky-footer.dark{
 
 
 
+}
+
+.footer-links {
+	text-align: left;
 }
